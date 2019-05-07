@@ -13,15 +13,15 @@ $url_path = str_replace('\\', '/', $url_path);
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="image-style">
-                            <img src="images/1.jpg" alt="Avatar" class="image img-responsive">
+                            <img src="./blocks/images/1.jpg" alt="Avatar" class="image img-responsive">
                             <div class="overlay">
                                 <div class="text">
                                     <a href="#" >
-                                        <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/details_hover.png" alt="detail" class="img-responsive"/>
                                         <p>Details</p>
                                     </a>
                                     <a href="#" >
-                                        <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/basket_hover.png" alt="detail" class="img-responsive"/>
                                         <p>To Cart</p>
                                     </a>
                                 </div>
@@ -44,15 +44,15 @@ $url_path = str_replace('\\', '/', $url_path);
                     </div>
                     <div class="swiper-slide">
                         <div class="image-style">
-                            <img src="images/2.jpg" alt="Avatar" class="image img-responsive">
+                            <img src="./blocks/images/2.jpg" alt="Avatar" class="image img-responsive">
                             <div class="overlay">
                                 <div class="text">
                                     <a href="#" >
-                                        <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/details_hover.png" alt="detail" class="img-responsive"/>
                                         <p>Details</p>
                                     </a>
                                     <a href="#" >
-                                        <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/basket_hover.png" alt="detail" class="img-responsive"/>
                                         <p>To Cart</p>
                                     </a>
                                 </div>
@@ -74,15 +74,15 @@ $url_path = str_replace('\\', '/', $url_path);
                     </div>
                     <div class="swiper-slide">
                         <div class="image-style">
-                            <img src="images/3.jpg" alt="Avatar" class="image img-responsive">
+                            <img src="./blocks/images/3.jpg" alt="Avatar" class="image img-responsive">
                             <div class="overlay">
                                 <div class="text">
                                     <a href="#" >
-                                        <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/details_hover.png" alt="detail" class="img-responsive"/>
                                         <p>Details</p>
                                     </a>
                                     <a href="#" >
-                                        <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/basket_hover.png" alt="detail" class="img-responsive"/>
                                         <p>To Cart</p>
                                     </a>
                                 </div>
@@ -103,15 +103,15 @@ $url_path = str_replace('\\', '/', $url_path);
                     </div>
                     <div class="swiper-slide">
                         <div class="image-style">
-                            <img src="images/4.jpg" alt="Avatar" class="image img-responsive">
+                            <img src="blocks/images/4.jpg" alt="Avatar" class="image img-responsive">
                             <div class="overlay">
                                 <div class="text">
                                     <a href="#" >
-                                        <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/details_hover.png" alt="detail" class="img-responsive"/>
                                         <p>Details</p>
                                     </a>
                                     <a href="#" >
-                                        <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
+                                        <img src="./blocks/images/basket_hover.png" alt="detail" class="img-responsive"/>
                                         <p>To Cart</p>
                                     </a>
                                 </div>

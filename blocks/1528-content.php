@@ -12,7 +12,7 @@ $url_path = str_replace('\\', '/', $url_path);
 		<div class="row view-border-1">
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<div class="img-view">
-					<img src="images/1528-img-1.jpg" alt="#" class="img-responsive">
+					<img src="./blocks/images/1528-img-1.jpg" alt="#" class="img-responsive">
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-12">
@@ -26,7 +26,7 @@ $url_path = str_replace('\\', '/', $url_path);
 		<div class="row view-border-2">
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<div class="img-view">
-					<img src="images/1528-img-2.jpg" alt="#" class="img-responsive">
+					<img src="./blocks/images/1528-img-2.jpg" alt="#" class="img-responsive">
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-12">

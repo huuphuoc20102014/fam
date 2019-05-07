@@ -9,18 +9,18 @@ $url_path = str_replace('\\', '/', $url_path);
 
 if (!class_exists('lessc')) {
     $dir_block = dirname($_SERVER['SCRIPT_FILENAME']);
-    require_once($dir_block . '/libs/lessc.inc.php');
+    require_once($dir_block . '/blocks/libs/lessc.inc.php');
 }
 
 $less = new lessc;
-$less->compileFile('less/home.less', 'css/home.css');
-$less->compileFile('less/1525.less', 'css/1525.css');
-$less->compileFile('less/1520.less', 'css/1520.css');
-$less->compileFile('less/1522.less', 'css/1522.css');
-$less->compileFile('less/1523.less', 'css/1523.css');
-$less->compileFile('less/1524.less', 'css/1524.css');
-$less->compileFile('less/1530.less', 'css/1530.css');
-$less->compileFile('less/1528.less', 'css/1528.css');
+$less->compileFile('blocks/less/home.less', 'blocks/css/home.css');
+$less->compileFile('blocks/less/1525.less', 'blocks/css/1525.css');
+$less->compileFile('blocks/less/1520.less', 'blocks/css/1520.css');
+$less->compileFile('blocks/less/1522.less', 'blocks/css/1522.css');
+$less->compileFile('blocks/less/1523.less', 'blocks/css/1523.css');
+$less->compileFile('blocks/less/1524.less', 'blocks/css/1524.css');
+$less->compileFile('blocks/less/1530.less', 'blocks/css/1530.css');
+$less->compileFile('blocks/less/1528.less', 'blocks/css/1528.css');
 ?>
 
 <!DOCTYPE html>
@@ -35,26 +35,26 @@ $less->compileFile('less/1528.less', 'css/1528.css');
     <title>Agriculture</title>
 
     <!-- Library  -->
-    <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-    <script src="<?php echo $url_path ?>/js/jquery.min.js"></script>
-    <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
-    <script src="<?php echo $url_path ?>/js/swiper.min.js"></script>
+    <link href="<?php echo $url_path ?>/blocks/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/blocks/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/blocks/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <script src="<?php echo $url_path ?>/blocks/js/jquery.min.js"></script>
+    <script src="<?php echo $url_path ?>/blocks/js/bootstrap.min.js"></script>
+    <script src="<?php echo $url_path ?>/blocks/js/swiper.min.js"></script>
 
 
     <!-- File css  -->
-    <link href="<?php echo $url_path ?>/css/home.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/css/1525.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/css/1520.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/css/1522.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/css/1523.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/css/1524.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/css/1530.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/css/1528.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/home.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/1525.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/blocks/css/1520.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/1522.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/1523.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/1524.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/1530.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo $url_path ?>/blocks/css/1528.css" rel="stylesheet" type="text/css"/>
     <!-- File js  -->
-    <script src="<?php echo $url_path ?>/js/1522.js" type="text/javascript"></script>
-    <script src="<?php echo $url_path ?>/js/1524.js" type="text/javascript"></script>
+    <script src="<?php echo $url_path ?>/block/js/1522.js" type="text/javascript"></script>
+    <script src="<?php echo $url_path ?>/block/js/1524.js" type="text/javascript"></script>
 
 </head>
 

@@ -12,7 +12,7 @@ $url_path = str_replace('\\', '/', $url_path);
 		<h3 class="no_sliding">Agricultural news</h3>
 		<article class="post-527">
 			<figure class="post_type_img">
-				<img src="images/1530-agriculture-36-150x150.jpg" class="img-thumbnail" alt="Autumn Harvest" >
+				<img src="./blocks/images/1530-agriculture-36-150x150.jpg" class="img-thumbnail" alt="Autumn Harvest" >
 			</figure>
 			<header>
 				<h4 class="entry-title">
@@ -27,7 +27,7 @@ $url_path = str_replace('\\', '/', $url_path);
 
 		<article class="post-489">
 			<figure class="post_type_img">
-				<img src="images/1530-agriculture-32-150x150.jpg" class="img-thumbnail" alt="Autumn Harvest" >
+				<img src="./blocks/images/1530-agriculture-32-150x150.jpg" class="img-thumbnail" alt="Autumn Harvest" >
 			</figure>
 
 			<header>

@@ -9,7 +9,7 @@ $url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-1525">
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="img-logo" class="img-fluid"></a>
+        <a class="navbar-brand" href="#"><img src="./blocks/images/logo.png" alt="img-logo" class="img-fluid"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
