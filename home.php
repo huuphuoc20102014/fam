@@ -28,23 +28,24 @@ $less->compileFile('blocks/1520/less/1520.less', 'blocks/1520/css/1520.css');
     <title>Agriculture</title>
 
     <!-- Library  -->
-    <link href="<?php echo $url_path ?>/blocks/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/blocks/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/blocks/1520/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/blocks/1520/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     
-    <script src="<?php echo $url_path ?>/blocks/js/bootstrap.min.js"></script>
-    <script src="<?php echo $url_path ?>/blocks/js/jquery.min.js"></script>
+    <script src="<?php echo $url_path ?>/blocks/1520/js/bootstrap.min.js"></script>
+    <script src="<?php echo $url_path ?>/blocks/1520/js/jquery.min.js"></script>
     <!-- File js  -->
 
     <!-- File css  -->
     <link href="<?php echo $url_path ?>/blocks/css/home.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css"/>
+
     
 
 </head>
 
 <body>
     <div class="top-header">
-        <?php include $dir_block . '/blocks/1520-content'; ?>
-
+         <?php include $dir_block . './blocks/1520/1520-content.php';  ?>
     </div>
    
 </body>
