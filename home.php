@@ -9,18 +9,11 @@ $url_path = str_replace('\\', '/', $url_path);
 
 if (!class_exists('lessc')) {
     $dir_block = dirname($_SERVER['SCRIPT_FILENAME']);
-    require_once($dir_block . '/blocks/libs/lessc.inc.php');
+    require_once($dir_block . '/blocks/1520/libs/lessc.inc.php');
 }
 
 $less = new lessc;
-$less->compileFile('blocks/less/home.less', 'blocks/css/home.css');
-$less->compileFile('blocks/less/1525.less', 'blocks/css/1525.css');
-$less->compileFile('blocks/less/1520.less', 'blocks/css/1520.css');
-$less->compileFile('blocks/less/1522.less', 'blocks/css/1522.css');
-$less->compileFile('blocks/less/1523.less', 'blocks/css/1523.css');
-$less->compileFile('blocks/less/1524.less', 'blocks/css/1524.css');
-$less->compileFile('blocks/less/1530.less', 'blocks/css/1530.css');
-$less->compileFile('blocks/less/1528.less', 'blocks/css/1528.css');
+$less->compileFile('blocks/1520/less/1520.less', 'blocks/1520/css/1520.css');
 ?>
 
 <!DOCTYPE html>
@@ -35,51 +28,25 @@ $less->compileFile('blocks/less/1528.less', 'blocks/css/1528.css');
     <title>Agriculture</title>
 
     <!-- Library  -->
-    <link href="<?php echo $url_path ?>/blocks/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/blocks/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/blocks/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-    <script src="<?php echo $url_path ?>/blocks/js/jquery.min.js"></script>
-    <script src="<?php echo $url_path ?>/blocks/js/bootstrap.min.js"></script>
-    <script src="<?php echo $url_path ?>/blocks/js/swiper.min.js"></script>
-
+    <link href="<?php echo $url_path ?>/blocks/1520/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $url_path ?>/blocks/1520/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <script src="<?php echo $url_path ?>/blocks/1520/js/bootstrap.min.js"></script>
+    <script src="<?php echo $url_path ?>/blocks/1520/js/jquery.min.js"></script>
+    <!-- File js  -->
 
     <!-- File css  -->
     <link href="<?php echo $url_path ?>/blocks/css/home.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/blocks/css/1525.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo $url_path ?>/blocks/css/1520.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/blocks/css/1522.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/blocks/css/1523.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/blocks/css/1524.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/blocks/css/1530.css" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo $url_path ?>/blocks/css/1528.css" rel="stylesheet" type="text/css"/>
-    <!-- File js  -->
-    <script src="<?php echo $url_path ?>/block/js/1522.js" type="text/javascript"></script>
-    <script src="<?php echo $url_path ?>/block/js/1524.js" type="text/javascript"></script>
+        <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css"/>
+
+    
 
 </head>
 
 <body>
     <div class="top-header">
-        <?php include $dir_block . '/blocks/1520-content.php'; ?>
-
+         <?php include $dir_block . './blocks/1520/1520-content.php';  ?>
     </div>
-    <div class="page-content">
-       <div class="container main-page-content">
-            <?php include $dir_block . '/blocks/1525-content.php'; ?>
-           <?php include $dir_block . '/blocks/1522-content.php'; ?>
-           <?php include $dir_block . '/blocks/1523-content.php'; ?>
-           <?php include $dir_block . '/blocks/1524-content.php'; ?>
-           <div class="type-1530-1528">
-               <div class="row">
-                   <div class="col-md-6">
-                       <?php include $dir_block . '/blocks/1530-content.php'; ?>
-                   </div>
-                   <div class="col-md-6">
-                       <?php include $dir_block . '/blocks/1528-content.php'; ?>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
+   
 </body>
 </html>
