@@ -15,6 +15,8 @@ if (!class_exists('lessc')) {
 $less = new lessc;
 $less->compileFile('blocks/1520/less/1520.less', 'blocks/1520/css/1520.css');
 $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
+$less->compileFile('blocks/1535/less/1535.less', 'blocks/1535/css/1535.css');
+$less->compileFile('blocks/1536/less/1536.less', 'blocks/1536/css/1536.css');
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +38,8 @@ $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
   <!-- File css  -->
   <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/1525.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1535/css/1535.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1536/css/1536.css" rel="stylesheet" type="text/css" />
 
 
   <!-- Library javascript  -->
@@ -48,11 +52,12 @@ $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
 
 </head>
 
-<body>
+<body style="">
   <div class="top-header">
     <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
     <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
-
+    <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
+    <?php include $dir_block . '/blocks/1536/1536-content.php'; ?>
   </div>
 </body>
 </html>
