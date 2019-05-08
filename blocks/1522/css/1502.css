@@ -1,0 +1,82 @@
+.type-1502 button {
+  display: inline-block;
+}
+.type-1502 .top .button-nex-pre {
+  height: 63px;
+  margin: -5px;
+}
+.type-1502 .top button {
+  background-image: none;
+  background-color: #292739;
+  width: auto;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 25px;
+  line-height: 10px;
+  font-weight: 400;
+  height: auto;
+  padding: 3px 13px;
+  margin-top: -12px;
+}
+.type-1502 .top button .swiper-button-prev {
+  left: 505px !important;
+}
+.type-1502 .image-background {
+  height: 100%;
+  width: auto;
+}
+.type-1502 .swiper-slide {
+  background: #292739;
+  color: #fff;
+  padding-bottom: 0px;
+}
+.type-1502 .info-body {
+  padding: 20px;
+}
+.type-1502 .info-body .title h4 {
+  text-transform: uppercase;
+  line-height: 28px;
+  font-weight: bold;
+}
+.type-1502 .info-body p {
+  color: #9b9b9b;
+}
+.type-1502 .info-body .cell p {
+  color: #000;
+}
+.type-1502 .info-body a {
+  color: #000;
+}
+.type-1502 .info-body a:hover {
+  color: #00aeef;
+}
+.type-1502 .cell {
+  float: left;
+}
+.type-1502 .cell a.btn.btn-primary {
+  color: #fff;
+}
+.type-1502 .detail,
+.type-1502 .detail a {
+  text-align: right;
+  color: #fff;
+}
+.type-1502 .item-foot {
+  border-top: 1px solid #d0d0d0;
+  color: #9b9b9b;
+  margin: 0 -10px;
+  margin-top: 25px;
+  padding: 10px;
+}
+.type-1502 .item-foot i {
+  padding: 10px;
+}
+.type-1502 .item-foot-right {
+  float: right;
+}
+.type-1502 .item-foot-left {
+  float: left;
+}
+.type-1502 .item-foot-left a {
+  color: #9b9b9b;
+}

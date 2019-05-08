@@ -1,0 +1,65 @@
+.type-1535 .thumb {
+  position: relative;
+  width: 100%;
+}
+.type-1535 .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #02020238;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.type-1535 .thumb:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.type-1535 .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.type-1535 .cmsmsLike {
+  display: block;
+  float: right;
+  margin: 3px 35px 0 0;
+}
+.type-1535 footer.entry-meta {
+  padding: 18px 0;
+  margin: 0 0 15px;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px dotted #dad7cc;
+  border-bottom: 1px dotted #dad7cc;
+}
+.type-1535 a {
+  text-decoration: none;
+  color: black;
+}
+.type-1535 a:hover {
+  text-decoration: none;
+  color: #BA5121;
+}
+.type-1535 .cl {
+  float: right;
+}
+.type-1535 img {
+  width: 100%;
+}
+.type-1535 img:hover {
+  opacity: 0.5;
+}

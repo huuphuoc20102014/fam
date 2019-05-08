@@ -1,0 +1,74 @@
+.type-1540 .header-1540 .divider {
+  border: 0;
+  border-top: 1px dotted #dad7cc;
+  border-bottom: 1px dotted #dad7cc;
+  display: block;
+  height: 4px;
+  width: 100%;
+  margin: 15px 0 5px;
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.type-1540 .header-1540 .divider-text h3 {
+  margin: 0 0 18px;
+}
+.type-1540 .row .person_block_1 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  background-color: #fffae6;
+}
+.type-1540 .row .person_block_1 figure img {
+  width: 100%;
+}
+.type-1540 .row .person_block_1 .person_info_1 {
+  padding: 15px;
+}
+.type-1540 .row .person_block_1 .person_info_1 .person_header_1 {
+  padding-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.type-1540 .row .person_block_2 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  background-color: #fffae6;
+}
+.type-1540 .row .person_block_2 figure img {
+  width: 100%;
+}
+.type-1540 .row .person_block_2 .person_info_2 {
+  padding: 15px;
+}
+.type-1540 .row .person_block_2 .person_info_2 .person_header_2 {
+  padding-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.type-1540 .row .person_block_3 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  background-color: #fffae6;
+}
+.type-1540 .row .person_block_3 figure img {
+  width: 100%;
+}
+.type-1540 .row .person_block_3 .person_info_3 {
+  padding: 15px;
+}
+.type-1540 .row .person_block_3 .person_info_3 .person_header_3 {
+  padding-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .type-1540 .row .person_block_1,
+  .type-1540 .row .person_block_2,
+  .type-1540 .row .person_block_3 {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+.type-1544 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.type-1544 .title-form h2 {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 37px;
+  text-transform: uppercase;
+}
+.type-1544 .form-contact .contact-name,
+.type-1544 .form-contact .contact-email,
+.type-1544 .form-contact .contact-website {
+  border: 1px solid #e5e5e5;
+  color: #999;
+  height: 42px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  width: 100%;
+}
+.type-1544 .form-contact .textarea-contact {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 20px;
+}
+.type-1544 .form-contact .send-info {
+  background: #fb9902 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  height: 40px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 110px;
+}
+.type-1544 .form-contact .send-info:hover {
+  opacity: 0.7;
+}
