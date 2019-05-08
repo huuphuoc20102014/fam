@@ -1,0 +1,50 @@
+.fam-1 {
+  font-size: 14px;
+}
+.fam-1 .fam-header {
+  background: #fff;
+  padding: 10px 0;
+}
+.fam-1 .fam-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.fam-1 .fam-header li {
+  float: left;
+}
+.fam-1 .fam-header li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.fam-1 .fam-header .active {
+  color: #4CAF50;
+  font-weight: bold;
+}
+.fam-1 .fam-header .fam-search {
+  margin-top: 1px;
+}
+.fam-1 .fam-header .fam-search button {
+  border: none;
+  padding: 6px;
+  background: none;
+}
+.fam-1 .fam-header .fam-search input {
+  border: none;
+  border-left: 1px solid #C0C0C0;
+  padding: 6px;
+  margin-top: 7px;
+  width: 130px;
+}
+.fam-1 .fam-header .fam-menu {
+  padding: 0;
+}
+.fam-1 .fam-header .fam-login {
+  padding: 0;
+  font-weight: bold;
+  color: #4267b2;
+}
