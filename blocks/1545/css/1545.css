@@ -39,6 +39,15 @@
 .type-1545 .cl {
   float: right;
 }
+.type-1545 .cl a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.type-1545 .cl a:hover {
+  text-decoration: none;
+  color: #BA5121;
+}
 .type-1545 img {
   width: 100%;
 }
