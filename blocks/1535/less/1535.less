@@ -1,10 +1,10 @@
 .type-1535{
+    margin-top: 50px;
     .thumb {
         position: relative;
         width: 100%;
-      
-      }
-      
+
+    }
     .overlay {
         position: absolute;
         bottom: 0;
@@ -20,12 +20,12 @@
         -webkit-transition: .3s ease;
         transition: .3s ease;
 
-      }     
-      .thumb:hover .overlay {
+    }     
+    .thumb:hover .overlay {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);
-      }   
+    }   
     .text {
         color: white;
         font-size: 20px;
@@ -36,12 +36,9 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
-      }
-    .cmsmsLike {
-        display: block;
-        float: right;
-        margin: 3px 35px 0 0;        
     }
+    
+
     footer.entry-meta {
         padding: 18px 0;
         margin: 0 0 15px;
@@ -49,27 +46,67 @@
         position: relative;
         border-top: 1px dotted #dad7cc;
         border-bottom: 1px dotted #dad7cc;
+        .cmsmsLike:hover{
+            color: #BA5121;
+        }
+        .cmsmsLike {
+            display: block;
+            float: right;
+            margin: 3px 35px 0 0;    
+            i.fa-heart-o{
+                text-decoration: none;
+            }
+            i.fa-heart-o:hover{
+                color: #BA5121;
+            }
+            span{
+                text-decoration: none;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #BA5121; 
+        }
     }
-     a {
-        text-decoration: none;
-        color: black;
-    }
-    a:hover {
-        text-decoration: none;
-        color: #BA5121; 
+    h1{
+        font-size: 30px;
+        padding:15px 0;
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #BA5121; 
+        }
     }
     .cl {
         float: right;
+        a {
+            text-decoration: none;
+            color: black !important;
+            text-transform: uppercase;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #BA5121; 
+        }
     }
     img {
         width: 100%;
-      }
-      img:hover {
+    }
+    img:hover {
         opacity: 0.5;
-      }
-      
-      
     }
 
-    
+
+}
+
+
 

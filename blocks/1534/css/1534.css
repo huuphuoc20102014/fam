@@ -1,4 +1,5 @@
-.type-1534 .headline {
+.type-1534 .head-line {
+  max-width: 100%;
   background-color: #419005;
   background-image: url(../images/heading-bg-3.png);
   background-position: 0 0;
@@ -10,35 +11,36 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.type-1534 .headline h1,
-.type-1534 .headline h5 {
+.type-1534 .head-line h1,
+.type-1534 .head-line h5 {
   color: #fff;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
   position: relative;
 }
-.type-1534 .headline h1:before {
-  margin-left: -100%;
+.type-1534 .head-line h1:before {
+  margin-left: -33%;
   content: '';
   border-top: 1px dotted rgba(255,255,255,0.5);
   border-bottom: 1px dotted rgba(255,255,255,0.5);
-  width: 99%;
+  width: 33%;
   height: 2px;
   position: absolute;
   bottom: 26px;
 }
-.type-1534 .headline h1:after {
+.type-1534 .head-line h1:after {
   content: '';
   border-top: 1px dotted rgba(255,255,255,0.5);
   border-bottom: 1px dotted rgba(255,255,255,0.5);
-  width: 99%;
   height: 2px;
+  width: 32%;
   margin-left: 1%;
   position: absolute;
   bottom: 26px;
 }
 .type-1534 .cmsms_breadcrumbs_1534 {
+  background: #fff;
   line-height: 20px;
   padding: 10px 15px 14px;
   margin: 0;

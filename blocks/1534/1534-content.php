@@ -8,16 +8,18 @@ $url_path = str_replace('\\', '/', $url_path);
 ?>
 
 <div class="type-1534">
-	<div class="headline">
-		<h1 class="heading-title">
-			Agricultural Blog
-		</h1>
-		<h5 class="heading_subtitle">Delicious News</h5>
-	</div>
+	<div class="container">
+		<div class="head-line">
+			<h1 class="heading-title">
+				Agricultural Blog
+			</h1>
+			<h5 class="heading_subtitle">Delicious News</h5>
+		</div>
 
-	<div class="cmsms_breadcrumbs_1534">
-		<a href="#" class="cms_home_1534">Home</a>
-		<span class="breadcrumbs_sep"> / </span>
-		<span>Blog</span>
+		<div class="cmsms_breadcrumbs_1534">
+			<a href="#" class="cms_home_1534">Home</a>
+			<span class="bread-crumbs_sep"> / </span>
+			<span>Blog</span>
+		</div>
 	</div>
 </div>

@@ -1,5 +1,15 @@
+.type-1536 {
+  margin-top: 50px;
+}
 .type-1536 aside.widget.widget_search {
   margin-top: 50px;
+}
+.type-1536 aside.widget.widget_search .input-group .input-group-btn button#searchsubmit {
+  background: #FFCB33;
+}
+.type-1536 aside.widget.widget_search .input-group .input-group-btn button#searchsubmit:hover {
+  background: #fff;
+  color: chocolate;
 }
 .type-1536 h6.widgettitle {
   border-top: 1px dotted #dad7cc;

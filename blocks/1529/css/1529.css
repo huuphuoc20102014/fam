@@ -1,17 +1,20 @@
 .type-1529 .view-border-top {
-  padding: 0 0 20px 0;
+  padding: 0 0 40px 0;
+  background: #fff;
 }
 .type-1529 .view-border-top::before {
   content: '';
   border-top: 1px dotted #dad7cc;
   border-bottom: 1px dotted #dad7cc;
-  width: 100%;
+  width: 82%;
   height: 4px;
   position: absolute;
-  left: 0;
+  left: 121;
 }
 .type-1529 .row {
   padding-bottom: 30px;
+  background: #fff;
+  margin: 0;
 }
 .type-1529 .one_third h3.fb-facebook {
   text-transform: uppercase;
@@ -185,10 +188,10 @@
   content: '';
   border-top: 1px dotted #dad7cc;
   border-bottom: 1px dotted #dad7cc;
-  width: 100%;
+  width: 82%;
   height: 4px;
   position: absolute;
-  left: 0;
+  left: 121;
 }
 @media only screen and (min-width: 320px) and (max-width: 991px) {
   .type-1529 footer#footer .footer_inner {
@@ -197,5 +200,10 @@
   .type-1529 footer#footer span.social_icons {
     padding: 10px 20px;
     float: left;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  .type-1529 .one_third iframe {
+    width: 100%;
   }
 }
