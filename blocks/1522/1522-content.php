@@ -1,5 +1,5 @@
 <?php
-$url_host = $_SERVER['HTTP_HOST'];
+$url_host = 'http://' . $_SERVER['HTTP_HOST'];
 $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
 $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
 preg_match_all($pattern_uri, __DIR__, $matches);
@@ -13,7 +13,7 @@ $url_path = str_replace('\\', '/', $url_path);
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/1.jpg" alt="background" class="img-responsive"/>
+                            <img src="<?php echo $url_path ?>/images/slide-1.jpg" alt="background" class="img-responsive"/>
                             <div class="title">
                                 <h3>
                                     organic
@@ -30,7 +30,7 @@ $url_path = str_replace('\\', '/', $url_path);
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/2.jpg" alt="background" class="img-responsive"/>
+                            <img src="<?php echo $url_path ?>/images/slide-2.jpg" alt="background" class="img-responsive"/>
                             <div class="list-sp">
                                 <ul>
                                     <li>1. carrots</li>
@@ -42,7 +42,7 @@ $url_path = str_replace('\\', '/', $url_path);
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/3.jpg" alt="background" class="img-responsive"/>
+                            <img src="<?php echo $url_path ?>/images/slide-3.jpg" alt="background" class="img-responsive"/>
                             <div class="title">
                                 <h3>
                                     RASPBERRY

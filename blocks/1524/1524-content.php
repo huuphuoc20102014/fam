@@ -1,5 +1,5 @@
 <?php
-$url_host = $_SERVER['HTTP_HOST'];
+$url_host = 'http://' . $_SERVER['HTTP_HOST'];
 $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
 $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
 preg_match_all($pattern_uri, __DIR__, $matches);
@@ -8,140 +8,138 @@ $url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-1524">
     <div class="container">
-        <div class="top row">
-            <div class="col-md-12 col-xs-12">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="image-style">
-                                <img src="images/1.jpg" alt="Avatar" class="image img-responsive">
-                                <div class="overlay">
-                                    <div class="text">
-                                        <a href="#" >
-                                            <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>Details</p>
-                                        </a>
-                                        <a href="#" >
-                                            <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>To Cart</p>
-                                        </a>
-                                    </div>
+        <!-- BEGIN CONTENT-->
+        <div class="row product-row">
+            <div class="col-md-3 col-sm-6 col-xs-12 col-hover">
+                <div class="item">
+                    <div class="thumb">
+                        <img src="<?php echo $url_path ?>/images/1.jpg" alt="#"  class="img-responsive">
 
-                                </div>
+                        <div class="overlay">
+                            <div class="text1">
+                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
+                                <p>TO CART</p>
                             </div>
-
-                            <div class="info">
-                                <span>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                                </span>
-                                <h4>CHERRY TOMATOES</h4>
-                                <span class="price">$5.00–$16.00</span>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-style">
-                                <img src="images/2.jpg" alt="Avatar" class="image img-responsive">
-                                <div class="overlay">
-                                    <div class="text">
-                                        <a href="#" >
-                                            <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>Details</p>
-                                        </a>
-                                        <a href="#" >
-                                            <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>To Cart</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="info">
-                                <span>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </span>
-                                <h4>CHERRY TOMATOES</h4>
-                                <span class="price">$5.00–$16.00</span>
+                            <div class="text2">
+                                <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
+                                <p>DETAILS</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="image-style">
-                                <img src="images/3.jpg" alt="Avatar" class="image img-responsive">
-                                <div class="overlay">
-                                    <div class="text">
-                                        <a href="#" >
-                                            <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>Details</p>
-                                        </a>
-                                        <a href="#" >
-                                            <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>To Cart</p>
-                                        </a>
-                                    </div>
 
-                                </div>
+
+                    </div>
+                    <div class="star-rating">
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                    </div>
+                    <h6 class="entry-title">
+                        <a href="#">Blueberries</a>
+                    </h6>
+                    <div class="price">
+                        <del><span><span>$</span>16.00</span></del><span>
+                            <span>$</span>13.45</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col-hover">
+                <div class="item">
+                    <div class="thumb">
+                        <img src="<?php echo $url_path ?>/images/2.jpg" alt="#" class="img-responsive">
+
+                        <div class="overlay">
+                            <div class="text1">
+                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
+                                <p>TO CART</p>
                             </div>
-                            <div class="info">
-                                <span>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </span>
-                                <h4>CHERRY TOMATOES</h4>
-                                <span class="price">$5.00–$16.00</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="image-style">
-                                <img src="images/4.jpg" alt="Avatar" class="image img-responsive">
-                                <div class="overlay">
-                                    <div class="text">
-                                        <a href="#" >
-                                            <img src="images/details_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>Details</p>
-                                        </a>
-                                        <a href="#" >
-                                            <img src="images/basket_hover.png" alt="detail" class="img-responsive"/>
-                                            <p>To Cart</p>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="info">
-                                <span>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-
-                                </span>
-                                <h4>CHERRY TOMATOES</h4>
-                                <span class="price">$5.00–$16.00</span>
+                            <div class="text2">
+                                <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
+                                <p>DETAILS</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <div class="star-rating">
+                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                        <i class="fa fa-star" style="color:#B0B0AF"></i>
                     </div>
-                    <div class="swiper-button-prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <h6 class="entry-title">
+                        <a href="#">Broccoli</a>
+                    </h6>
+                    <div class="price">
+                        <span>$</span>8.50</span>
+                    </div>
+                    <a href="../../../block/b111_6_phuoc/1524/less/1524.less"></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 col-hover">
+                <div class="item">
+                    <div class="thumb">
+                        <img src="<?php echo $url_path ?>/images/3.jpg" alt="#" class="img-responsive">
+
+                        <div class="overlay">
+                            <div class="text1">
+                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
+                                <p>TO CART</p>
+                            </div>
+                            <div class="text2">
+                                <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
+                                <p>DETAILS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                    </div>
+                    <h6 class="entry-title">
+                        <a href="#">Carrots</a>
+                    </h6>
+                    <div class="price">
+                        <span>$</span>10.55</span>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-6 col-xs-12 col-hover">
+                <div class="item">
+                    <div class="thumb">
+                        <img src="<?php echo $url_path ?>/images/4.jpg" alt="#" class="img-responsive">
+                        <div class="overlay">
+                            <div class="text1">
+                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
+                                <p>TO CART</p>
+                            </div>
+                            <div class="text2">
+                                <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
+                                <p>DETAILS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                    </div>
+                    <h6 class="entry-title">
+                        <a href="#">Cherry Tomatoes</a>
+                    </h6>
+                    <div class="price">
+                        <span>$</span>5.00</span>
+                        <span>-</span>
+                        <span>$</span>16.00</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 </div>  
+    

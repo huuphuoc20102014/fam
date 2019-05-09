@@ -1,3 +1,8 @@
+.type-1528 {
+  padding: 50px 0;
+  background: #fff;
+  border-top: 1px dotted #dad7cc;
+}
 .type-1528 .agricul-tural-news .view-border-1 {
   background: #F5422B;
 }
@@ -54,7 +59,7 @@
   text-decoration: none;
 }
 .type-1528 .agricul-tural-news .text-view a:hover {
-  color: #4267B2;
+  color: #f3e915;
 }
 .type-1528 .agricul-tural-news .img-view {
   margin-left: -15px;

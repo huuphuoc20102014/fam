@@ -1,5 +1,5 @@
 .type-1522 .swiper-container {
-  width: 85%;
+  width: 100%;
   height: auto;
 }
 .type-1522 .swiper-slide {
@@ -19,6 +19,9 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+.type-1522 .swiper-slide img {
+  max-width: 100%;
 }
 .type-1522 .swiper-slide .title {
   position: absolute;
