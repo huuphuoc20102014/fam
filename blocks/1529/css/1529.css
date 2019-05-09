@@ -1,5 +1,5 @@
 .type-1529 .view-border-top {
-  padding: 0 0 40px 0;
+  padding: 0 0 50px 0;
   background: #fff;
 }
 .type-1529 .view-border-top::before {
@@ -11,8 +11,7 @@
   position: absolute;
   left: 121;
 }
-.type-1529 .row {
-  padding-bottom: 30px;
+.type-1529 .footer-row {
   background: #fff;
   margin: 0;
 }
@@ -118,10 +117,10 @@
   color: #61200c;
 }
 .type-1529 footer#footer .footer_inner {
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 .type-1529 footer#footer span.social_icons {
-  padding: 50px 20px;
+  padding: 30px 20px;
   float: right;
 }
 .type-1529 footer#footer span.social_icons span.icon-twitter i.fa-twitter {
