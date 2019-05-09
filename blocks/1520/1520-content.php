@@ -11,9 +11,9 @@ $url_path = str_replace('\\', '/', $url_path);
     <div class="container">
         <div class="fam-header row">
             <div class="col-md-3">
-                <a href="1.php">
+                <!-- <a href="1.php">
                     <img src="<?php echo $url_path ?>/image/logo.png" alt="erorr" class="img-responsive">
-                </a>
+                </a> -->
             </div>
             <div class="col-md-5 fam-menu">
                 
