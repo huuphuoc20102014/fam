@@ -32,15 +32,11 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Agriculture</title>
-
   <!-- Library css  -->
-  
   <link href="<?php echo $url_path ?>/blocks/1525/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/swiper.min.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo $url_path ?>/blocks/1525/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
   <!-- File css  -->
   <link href="<?php echo $url_path ?>/blocks/1525/css/blog.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css" />
@@ -51,18 +47,13 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <link href="<?php echo $url_path ?>/blocks/1545/css/1545.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1546/css/1546.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1529/css/1529.css" rel="stylesheet" type="text/css" />
-
-
-
   <!-- Library javascript  -->
   <script src="<?php echo $url_path ?>/blocks/1525/js/jquery-1.12.4.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/jquery.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/bootstrap.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/swiper.min.js"></script>
-
   <!-- File js  -->
   <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
-
 </head>
 
 <body style="background: url(../fam/blocks/background/background.png);">

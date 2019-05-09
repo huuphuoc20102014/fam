@@ -36,11 +36,8 @@
   text-decoration: none;
   color: #BA5121;
 }
-.type-1545 .item .cl {
+.type-1545 .cl {
   float: right;
-}
-.type-1545 .item .cl a {
-  color: #000 !important;
 }
 .type-1545 img {
   width: 100%;

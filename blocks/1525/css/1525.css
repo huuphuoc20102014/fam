@@ -57,6 +57,10 @@
     width: 188px;
     height: 29px;
   }
+  .type-1525 .navbar div#navbarSupportedContentXL {
+    z-index: 1;
+    background: #fff;
+  }
   .type-1525 .navbar div#navbarSupportedContentXL ul.navbar-nav {
     margin-left: 60px;
   }
@@ -274,6 +278,8 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
   .type-1525 nav.navbar div#navbarSupportedContentXL {
+    z-index: 1;
+    background: #fff;
     position: absolute;
     width: 100%;
     left: 0;
