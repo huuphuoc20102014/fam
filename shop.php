@@ -9,12 +9,15 @@ $url_path = str_replace('\\', '/', $url_path);
 
 if (!class_exists('lessc')) {
   $dir_block = dirname($_SERVER['SCRIPT_FILENAME']);
-  require_once($dir_block . '/blocks/1525/libs/lessc.inc.php');
+  require_once($dir_block . '/blocks/1520/libs/lessc.inc.php');
 }
 
 $less = new lessc;
 $less->compileFile('blocks/1520/less/1520.less', 'blocks/1520/css/1520.css');
 $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
+$less->compileFile('blocks/1538/less/1538.less', 'blocks/1538/css/1538.css');
+$less->compileFile('blocks/1539/less/1539.less', 'blocks/1539/css/1539.css');
+$less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 ?>
 
 <!DOCTYPE html>
@@ -36,23 +39,26 @@ $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
   <!-- File css  -->
   <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/1525.css" rel="stylesheet" type="text/css" />
-
+  <link href="<?php echo $url_path ?>/blocks/1538/css/1538.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1539/css/1539.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1529/css/1529.css" rel="stylesheet" type="text/css" />
 
   <!-- Library javascript  -->
-  <script src="<?php echo $url_path ?>/blocks/1525/js/jquery.min.js"></script>
+  <script src="<?php echo $url_path ?>/blocks/1525/js/jquery-1.12.4.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/bootstrap.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/swiper.min.js"></script>
 
   <!-- File js  -->
-  <!-- <script src="<?php echo $url_path ?>/block/1525/js/1522.js" type="text/javascript"></script> -->
+  <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
 
+  
 </head>
 
-<body>
-  <div class="top-header">
+<body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0; ">
     <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
     <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
-
-  </div>
+    <?php include $dir_block . '/blocks/1538/1538-content.php'; ?>
+    <?php include $dir_block . '/blocks/1539/1539-content.php'; ?>
+    <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
 </body>
 </html>

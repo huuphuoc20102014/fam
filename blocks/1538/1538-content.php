@@ -9,18 +9,16 @@ $url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-1538">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 ">
-                <div class="headline"
-                    style="background-color:#419005; background-image:url(../../images/heading-bg-3.png);">
-                    <h1>Shop</h1>
-                </div>
-                <div class = "breadcrumb">
-                    <a hef = "#">Home</a>
-                    <a hef = "#">/ Shop</a>
-                </div>
-            </div>
+        <div class="headline">
+            <h1 class="heading-title">
+                Blog
+            </h1>
         </div>
 
+        <div class="cmsms_breadcrumbs_1538">
+            <a href="#" class="cms_home_1538">Home</a>
+            <span class="breadcrumbs_sep"> / </span>
+            <span>Blog</span>
+        </div>
     </div>
 </div>

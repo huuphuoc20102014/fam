@@ -59,6 +59,7 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
         <script src="blocks/1522/js/swiper.min.js" type="text/javascript"></script>
         <!-- File js  -->
         <script src="<?php echo $url_path ?>/blocks/1522/js/1522.js" type="text/javascript"></script>
+        <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
     </head>
 
     <body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0;
