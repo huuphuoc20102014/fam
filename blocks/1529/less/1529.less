@@ -3,19 +3,22 @@
     @background_color:#fffae6;
 
     .view-border-top{
-        padding:0 0 20px 0;
+        padding:0 0 40px 0;
+        background: #fff;
     }
     .view-border-top::before{
         content: '';
         border-top: 1px dotted #dad7cc;
         border-bottom: 1px dotted #dad7cc;
-        width: 100%;
+        width: 82%;
         height: 4px;
         position: absolute;
-        left: 0;
+        left: 121;
     }
     .row{
         padding-bottom: 30px;
+        background: #fff;
+        margin: 0;
     }
     .one_third{
         h3.fb-facebook{
@@ -215,10 +218,10 @@
         content: '';
         border-top: 1px dotted #dad7cc;
         border-bottom: 1px dotted #dad7cc;
-        width: 100%;
+        width: 82%;
         height: 4px;
         position: absolute;
-        left: 0;
+        left: 121;
     }
 
     @media only screen and (min-width: 320px) and (max-width: 991px){ 
@@ -229,6 +232,13 @@
             span.social_icons{
                 padding: 10px 20px;
                 float: left;
+            }
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 1199px){
+        .one_third{
+            iframe{
+                width: 100%;
             }
         }
     }

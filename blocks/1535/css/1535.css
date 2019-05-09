@@ -1,3 +1,6 @@
+.type-1535 {
+  margin-top: 50px;
+}
 .type-1535 .thumb {
   position: relative;
   width: 100%;
@@ -33,11 +36,6 @@
   transform: translate(-50%,-50%);
   text-align: center;
 }
-.type-1535 .cmsmsLike {
-  display: block;
-  float: right;
-  margin: 3px 35px 0 0;
-}
 .type-1535 footer.entry-meta {
   padding: 18px 0;
   margin: 0 0 15px;
@@ -46,16 +44,56 @@
   border-top: 1px dotted #dad7cc;
   border-bottom: 1px dotted #dad7cc;
 }
-.type-1535 a {
+.type-1535 footer.entry-meta .cmsmsLike:hover {
+  color: #BA5121;
+}
+.type-1535 footer.entry-meta .cmsmsLike {
+  display: block;
+  float: right;
+  margin: 3px 35px 0 0;
+}
+.type-1535 footer.entry-meta .cmsmsLike i.fa-heart-o {
+  text-decoration: none;
+}
+.type-1535 footer.entry-meta .cmsmsLike i.fa-heart-o:hover {
+  color: #BA5121;
+}
+.type-1535 footer.entry-meta .cmsmsLike span {
+  text-decoration: none;
+}
+.type-1535 footer.entry-meta a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
-.type-1535 a:hover {
+.type-1535 footer.entry-meta a:hover {
+  text-decoration: none;
+  color: #BA5121;
+}
+.type-1535 h1 {
+  font-size: 30px;
+  padding: 15px 0;
+}
+.type-1535 h1 a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.type-1535 h1 a:hover {
   text-decoration: none;
   color: #BA5121;
 }
 .type-1535 .cl {
   float: right;
+}
+.type-1535 .cl a {
+  text-decoration: none;
+  color: black !important;
+  text-transform: uppercase;
+}
+.type-1535 .cl a:hover {
+  text-decoration: none;
+  color: #BA5121;
 }
 .type-1535 img {
   width: 100%;

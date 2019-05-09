@@ -8,13 +8,13 @@ $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 ?>
 <div class="type-1529">
-    <div class="view-border-top"></div>
     <div class="container">
+        <div class="view-border-top"></div>
         <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="one_third">
                     <h3 class="fb-facebook">facebook</h3>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuylele24%2F&tabs=timeline&width=400&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuylele24%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
@@ -39,7 +39,7 @@ $url_path = str_replace('\\', '/', $url_path);
                     </div> 
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="view-time">
                     <h3 class="fb-twitter">Twitter</h3>
                     <div class="view-years">

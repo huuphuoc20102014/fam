@@ -9,23 +9,17 @@ $url_path = str_replace('\\', '/', $url_path);
 ?>
 
 <div class="col-md-9 col-sm-6 col-xs-12">
-    <div class="type-1535">
+    <div class="type-1545">
         <article>
             <div class="item">
                 <div class="thumb">
-                    <img src="<?php echo $url_path ?>/images/1.jpg"  alt="#" class="img-responsive">
-                    <div class="overlay">
-                        <div class="text">
-                            <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
-
-                        </div>
-
-                    </div>
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/-2nWe5cWjo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <header>
+
                     <h1>
                         <i class="fa fa-book" aria-hidden="true"></i>
-                        <a href="#">Autumn Harvest</a>
+                        <a href="#">Blueberry Feast</a>
                     </h1>
                 </header>
                 <footer class="entry-meta">
@@ -48,7 +42,8 @@ $url_path = str_replace('\\', '/', $url_path);
                     not when the next product is released for sale, but when our customers share their great
                 user experience and showcase the beautiful websites they have managed to…</p>
 
-                <div class="cl"> <a href="#">Read More</a>
+                <div class="cl"> 
+                    <a href="#">Read More</a>
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </div>
             </div>

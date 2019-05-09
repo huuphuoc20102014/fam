@@ -13,10 +13,15 @@ if (!class_exists('lessc')) {
 }
 
 $less = new lessc;
+$less->compileFile('blocks/1525/less/blog.less', 'blocks/1525/css/blog.css');
 $less->compileFile('blocks/1520/less/1520.less', 'blocks/1520/css/1520.css');
 $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
+$less->compileFile('blocks/1534/less/1534.less', 'blocks/1534/css/1534.css');
 $less->compileFile('blocks/1535/less/1535.less', 'blocks/1535/css/1535.css');
 $less->compileFile('blocks/1536/less/1536.less', 'blocks/1536/css/1536.css');
+$less->compileFile('blocks/1545/less/1545.less', 'blocks/1535/css/1545.css');
+$less->compileFile('blocks/1546/less/1546.less', 'blocks/1536/css/1546.css');
+$less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 ?>
 
 <!DOCTYPE html>
@@ -31,33 +36,59 @@ $less->compileFile('blocks/1536/less/1536.less', 'blocks/1536/css/1536.css');
   <title>Agriculture</title>
 
   <!-- Library css  -->
-  <link href="<?php echo $url_path ?>/blocks/1525/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  
   <link href="<?php echo $url_path ?>/blocks/1525/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+  <link href="<?php echo $url_path ?>/blocks/1525/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
   <!-- File css  -->
+  <link href="<?php echo $url_path ?>/blocks/1525/css/blog.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/1525.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1534/css/1534.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1535/css/1535.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1536/css/1536.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1545/css/1545.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1546/css/1546.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1529/css/1529.css" rel="stylesheet" type="text/css" />
+
 
 
   <!-- Library javascript  -->
+  <script src="<?php echo $url_path ?>/blocks/1525/js/jquery-1.12.4.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/jquery.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/bootstrap.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/swiper.min.js"></script>
 
   <!-- File js  -->
-  <!-- <script src="<?php echo $url_path ?>/block/1525/js/1522.js" type="text/javascript"></script> -->
+  <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
 
 </head>
 
-<body style="">
+<body style="background: url(../fam/blocks/background/background.png);">
   <div class="top-header">
     <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
     <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
-    <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
-    <?php include $dir_block . '/blocks/1536/1536-content.php'; ?>
   </div>
+  <div class="body-blog">
+    <?php include $dir_block . '/blocks/1534/1534-content.php'; ?>
+    <div class="header-slide">
+      <div class="container">
+        <div class="row">
+          <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
+          <?php include $dir_block . '/blocks/1536/1536-content.php'; ?>
+        </div>
+        <div class="row">
+          <?php include $dir_block . '/blocks/1545/1545-content.php'; ?>
+          <?php include $dir_block . '/blocks/1546/1546-content.php'; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
+  </div>
+  
 </body>
 </html>
