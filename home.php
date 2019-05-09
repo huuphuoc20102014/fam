@@ -21,7 +21,6 @@ $less->compileFile('blocks/1524/less/1524.less', 'blocks/1524/css/1524.css');
 $less->compileFile('blocks/1526/less/1526.less', 'blocks/1526/css/1526.css');
 $less->compileFile('blocks/1528/less/1528.less', 'blocks/1528/css/1528.css');
 $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
-
 ?>
 
 <!DOCTYPE html>
@@ -62,8 +61,7 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
         <script src="<?php echo $url_path ?>/blocks/1522/js/1522.js" type="text/javascript"></script>
     </head>
 
-    <body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0;;
-
+    <body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0;
           background-repeat: no-repeat;">
         <div class="top-header">
             <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
@@ -85,6 +83,8 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
                 </div>
             </div>
         </div>
-        
+        <div class="footer">
+            <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
+        </div>
     </body>
 </html>
