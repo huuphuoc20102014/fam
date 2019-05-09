@@ -10,7 +10,7 @@ $url_path = str_replace('\\', '/', $url_path);
 <div class="type-1529">
     <div class="container">
         <div class="view-border-top"></div>
-        <div class="row">
+        <div class="row footer-row">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="one_third">
                     <h3 class="fb-facebook">facebook</h3>
@@ -71,7 +71,7 @@ $url_path = str_replace('\\', '/', $url_path);
             </div>
         </div>
         <footer id="footer" role="contentinfo">
-            <div class="row">
+            <div class="row footer-row">
                 <div class="col-md-6">
                     <div class="footer_inner">
                         <span class="copyright">This is a sample website - cmsmasters © 2019 / All Rights Reserved</span>

@@ -1,5 +1,7 @@
 .type-1523 .top-row {
-  margin: 150px 0;
+  margin: 0;
+  background: #fff;
+  padding-bottom: 50px;
 }
 .type-1523 .col-bagr {
   background-color: #ff6f24;
@@ -33,6 +35,9 @@
   left: 50%;
   bottom: 35px;
 }
+.type-1523 .images {
+  background-color: #ff6f24;
+}
 .type-1523 .images::after {
   content: '';
   border-left: 215px solid #fff;
@@ -40,8 +45,9 @@
   width: 100%;
   position: absolute;
   left: 0px;
-  top: -20px;
+  top: -10px;
   border-left-color: #ff6f24;
+  z-index: 3;
 }
 .type-1523 .images::before {
   content: '';
@@ -50,26 +56,36 @@
   width: 100%;
   position: absolute;
   left: 0px;
-  top: -20px;
+  top: -10px;
   border-right-color: #ff6f24;
+  z-index: 3;
 }
 .type-1523 .img2::after {
   border-left: 215px solid #f54027;
+  z-index: 3;
 }
 .type-1523 .img2::before {
   border-right: 215px solid #f54027;
+  z-index: 3;
 }
 .type-1523 .img3::after {
   border-left: 215px solid #48a21d;
+  z-index: 3;
 }
 .type-1523 .img3::before {
   border-right: 215px solid #48a21d;
+  z-index: 3;
 }
 .type-1523 .img4::after {
   border-left: 215px solid #ffbe01;
+  z-index: 3;
 }
 .type-1523 .img4::before {
   border-right: 215px solid #ffbe01;
+  z-index: 3;
+}
+.type-1523 .col-hover {
+  padding: 0;
 }
 .type-1523 .col-hover:hover {
   margin-top: -10px;

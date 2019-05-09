@@ -1,374 +1,374 @@
 .type-1525{
-	@background_main:#fffae6;
-	@background_menu:#FFCB33;
-	@color_White:#fff;
-	.navbar{
-		background:@background_main !important;
-		height: 128px;
-		a.navbar-brand{
-			img.img-fluid{
-				width: 188px;
-				height: 29px;
-			}
-		}
-		.navbar-toggler {
-			background: @background_menu;
-		}
-		div#navbarSupportedContentXL{
-			ul.navbar-nav{
-				li.active{
-					a.nav-link{
-						background: @background_menu;
-						text-transform: uppercase;
-						font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-						font-weight: 600;
-						font-style: normal;
-						color: #483601;
-					}
-					.dropdown-menu{
-						border-radius: 0px;
-						background: #2F2927;
-						a.dropdown-item{
-							text-transform: uppercase;
-							font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-							font-weight: 600;
-							font-style: normal;
-							color: @color_White;
-						}
-						a.dropdown-item:hover{
-							color: #483601;
-						}
-					}
-				}
-				li.nav-item{
-					a.nav-link{
-						text-transform: uppercase;
-						font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-						font-weight: 600;
-						font-style: normal;
-						color: #483601;
-					}
-					.dropdown-menu{
-						border-radius: 0px;
-						background: #2F2927;
-						a.dropdown-item{
-							text-transform: uppercase;
-							font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-							font-weight: 600;
-							font-style: normal;
-							color: @color_White;
-						}
-					}
-				}
-			}
-		}
-	}
-	@media (min-width: 1200px){
-		.navbar{
-			/*padding: 45px 0;*/
-			a.navbar-brand{
-				margin-left: 45px;
-				img.img-fluid{
-					width: 188px;
-					height: 29px;
-				}
-			}
-			div#navbarSupportedContentXL{
-				z-index: 1;
-				ul.navbar-nav{
-					margin-left: 60px;
-					li.active{
-						position: relative;
-						top: -21px;
-						padding: 0 10px;
-						a.nav-link{
-							padding: 60px 0 22px 0;
-						}
-						.dropdown-menu{
-							left: -20px;
-							top: 110px;
-							text-align: center;
-							border-radius: 0px;
-							background: #2F2927;
-							a.dropdown-item{
-								text-transform: uppercase;
-								font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-								font-weight: 600;
-								font-style: normal;
-								color: @color_White;
-							}
-							a.dropdown-item:hover{
-								color: @background_menu;
-								background: none;
-							}
-						}
-						a.before-home{
-							color: @color_White;
-							width: 100px;
-							text-align: center;
-						}
-						a.before-home::before{
-							content: '';
-							position: absolute;
-							left: 10px;
-							top: 102px;
-							border-color: transparent @background_menu;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 0 50px 10px 50px;
-						}
-					}
-					li.nav-item{
-						top: -21px;
-						position: relative;
-						padding: 0 10px;
-						a.nav-link{
-							padding: 60px 0 22px 0;
-						}
-						.dropdown-menu{
-							left: -50px;
-							top: 110px;
-							text-align: center;
-							border-radius: 0px;
-							background: #2F2927;
-							a.dropdown-item{
-								text-transform: uppercase;
-								font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-								font-weight: 600;
-								font-style: normal;
-								color: @color_White;
-							}
-							a.dropdown-item:hover{
-								color: @background_menu;
-								background: none;
-							}
-						}
-					}
-					li.nav-item:hover{
-						top: -21px;
-						position: relative;
-						padding: 0 10px;
-						a.nav-link{
-							background: @background_menu;
-							padding: 60px 0 22px 0;
-						}	
-					}
-					li.active::after{
-						content: '';
-						position: absolute;
-						left: 2px;
-						top: 0;
-						border-color: transparent #483601;
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 8px 8px 0px 0px;
-					}
-					li.active::before{
-						content: '';
-						position: absolute;
-						right: 2px;
-						top: 0;
-						border-color: transparent #483601;
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 8px 0 0 8px;
-					}
-					li.nav-item:hover::before{
-						content: '';
-						position: absolute;
-						right:2px;
-						top: 0;
-						border-color: transparent #483601;
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 8px 0 0 8px;
-					}
-					li.nav-item:hover::after{
-						content: '';
-						position: absolute;
-						left: 2px;
-						top: 0;
-						border-color: transparent #483601;
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 8px 8px 0px 0px;
-					}
-					
-					li.nav-item-why-us{
-						/*margin-left: 63px;*/
-						a.before-why-us{
-							width: 100px;
-							text-align: center;
-						}
-						a.before-why-us:hover{
-							color: @color_White;
-						}
-						a.before-why-us:hover::before{
-							content: '';
-							position: absolute;
-							left: 10px;
-							top: 102px;
-							border-color: transparent @background_menu;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 0 50px 10px 50px;
-						}
-					}
-					li.nav-item-shop{
-						a.before-shop{
-							width: 100px;
-							text-align: center;
-						}
-						a.before-shop:hover{
-							color: @color_White;
-						}
-						a.before-shop:hover::before{
-							content: '';
-							position: absolute;
-							left: 10px;
-							top: 102px;
-							border-color: transparent @background_menu;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 0 50px 10px 50px;
-						}
-					}
-					li.nav-item-blog{
-						a.before-blog{
-							width: 100px;
-							text-align: center;
-						}
-						a.before-blog:hover{
-							color: @color_White;
-						}
-						a.before-blog:hover::before{
-							content: '';
-							position: absolute;
-							left: 10px;
-							top: 102px;
-							border-color: transparent @background_menu;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 0 50px 10px 50px;
-						}
-					}
-					li.nav-item-portfolio{
-						a.before-portfolio{
-							width: 100%;
-							text-align: center;
-						}
-						a.before-portfolio:hover{
-							color: @color_White;
-						}
-						a.before-portfolio:hover::before{
-							content: '';
-							position: absolute;
-							left: 10px;
-							top: 102px;
-							border-color: transparent @background_menu;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 0 56px 10px 56px;
-						}
-					}
-					li.nav-item-features{
-						a.before-features{
-							width: 100%;
-							text-align: center;
-						}
-						a.before-features:hover{
-							color: @color_White;
-						}
-						a.before-features:hover::before{
-							content: '';
-							position: absolute;
-							left: 10px;
-							top: 102px;
-							border-color: transparent @background_menu;
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 0 51.5px 10px 51.5px;
-						}
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (min-width: 320px) and (max-width: 1199px){
-		nav.navbar{
-			div#navbarSupportedContentXL{
-				z-index: 1;
-				background: #fff;
-				position: absolute;
-				width: 100%;
-				left: 0;
-				top: 135px;
-				ul.navbar-nav{
-					li.active{
-						a.nav-link{
-							text-transform: uppercase;
-							font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-							font-style: normal;
-							font-weight: 600;
-							color: @color_White;
-							padding: 13px 18px;
-						}
-						.dropdown-menu{
-							border-radius: 0px;
-							background: @color_White;
-							a.dropdown-item{
-								text-transform: uppercase;
-								font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-								font-style: normal;
-								color: #483601;
-								padding: 13px 35px;
-							}
-							a.dropdown-item:hover{
-								background: @background_menu;
-								color: @color_White;
-							}
-						}
-					}
-					li.nav-item{
-						a.nav-link{
-							text-transform: uppercase;
-							font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-							font-style: normal;
-							color: #483601;
-							padding: 13px 18px;
-						}
-						.dropdown-menu{
-							border-radius: 0px;
-							background: none;
-							a.dropdown-item{
-								text-transform: uppercase;
-								font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-								font-style: normal;
-								color: #483601;
-								padding: 13px 35px;
-							}
-							a.dropdown-item:hover{
-								background: @background_menu;
-								color: @color_White;
-							}
-						}
-					}
-					li.nav-item:hover a.nav-link{
-						background: @background_menu;
-						color: @color_White;
-					}
-				}
-			}
-		}
-	}
+    @background_main:#fffae6;
+    @background_menu:#FFCB33;
+    @color_White:#fff;
+    .navbar{
+        background:@background_main !important;
+        height: 128px;
+        a.navbar-brand{
+            img.img-fluid{
+                width: 188px;
+                height: 29px;
+            }
+        }
+        .navbar-toggler {
+            background: @background_menu;
+        }
+        div#navbarSupportedContentXL{
+            ul.navbar-nav{
+                li.active{
+                    a.nav-link{
+                        background: @background_menu;
+                        text-transform: uppercase;
+                        font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                        font-weight: 600;
+                        font-style: normal;
+                        color: #483601;
+                    }
+                    .dropdown-menu{
+                        border-radius: 0px;
+                        background: #2F2927;
+                        a.dropdown-item{
+                            text-transform: uppercase;
+                            font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                            font-weight: 600;
+                            font-style: normal;
+                            color: @color_White;
+                        }
+                        a.dropdown-item:hover{
+                            color: #483601;
+                        }
+                    }
+                }
+                li.nav-item{
+                    a.nav-link{
+                        text-transform: uppercase;
+                        font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                        font-weight: 600;
+                        font-style: normal;
+                        color: #483601;
+                    }
+                    .dropdown-menu{
+                        border-radius: 0px;
+                        background: #2F2927;
+                        a.dropdown-item{
+                            text-transform: uppercase;
+                            font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                            font-weight: 600;
+                            font-style: normal;
+                            color: @color_White;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px){
+        .navbar{
+            /*padding: 45px 0;*/
+            a.navbar-brand{
+                margin-left: 45px;
+                img.img-fluid{
+                    width: 188px;
+                    height: 29px;
+                }
+            }
+            div#navbarSupportedContentXL{
+                z-index: 5;
+                ul.navbar-nav{
+                    margin-left: 60px;
+                    li.active{
+                        position: relative;
+                        top: -21px;
+                        padding: 0 10px;
+                        a.nav-link{
+                            padding: 60px 0 22px 0;
+                        }
+                        .dropdown-menu{
+                            left: -20px;
+                            top: 110px;
+                            text-align: center;
+                            border-radius: 0px;
+                            background: #2F2927;
+                            a.dropdown-item{
+                                text-transform: uppercase;
+                                font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                                font-weight: 600;
+                                font-style: normal;
+                                color: @color_White;
+                            }
+                            a.dropdown-item:hover{
+                                color: @background_menu;
+                                background: none;
+                            }
+                        }
+                        a.before-home{
+                            color: @color_White;
+                            width: 100px;
+                            text-align: center;
+                        }
+                        a.before-home::before{
+                            content: '';
+                            position: absolute;
+                            left: 10px;
+                            top: 102px;
+                            border-color: transparent @background_menu;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 50px 10px 50px;
+                        }
+                    }
+                    li.nav-item{
+                        top: -21px;
+                        position: relative;
+                        padding: 0 10px;
+                        a.nav-link{
+                            padding: 60px 0 22px 0;
+                        }
+                        .dropdown-menu{
+                            left: -50px;
+                            top: 110px;
+                            text-align: center;
+                            border-radius: 0px;
+                            background: #2F2927;
+                            a.dropdown-item{
+                                text-transform: uppercase;
+                                font: 16px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                                font-weight: 600;
+                                font-style: normal;
+                                color: @color_White;
+                            }
+                            a.dropdown-item:hover{
+                                color: @background_menu;
+                                background: none;
+                            }
+                        }
+                    }
+                    li.nav-item:hover{
+                        top: -21px;
+                        position: relative;
+                        padding: 0 10px;
+                        a.nav-link{
+                            background: @background_menu;
+                            padding: 60px 0 22px 0;
+                        }	
+                    }
+                    li.active::after{
+                        content: '';
+                        position: absolute;
+                        left: 2px;
+                        top: 0;
+                        border-color: transparent #483601;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 8px 8px 0px 0px;
+                    }
+                    li.active::before{
+                        content: '';
+                        position: absolute;
+                        right: 2px;
+                        top: 0;
+                        border-color: transparent #483601;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 8px 0 0 8px;
+                    }
+                    li.nav-item:hover::before{
+                        content: '';
+                        position: absolute;
+                        right:2px;
+                        top: 0;
+                        border-color: transparent #483601;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 8px 0 0 8px;
+                    }
+                    li.nav-item:hover::after{
+                        content: '';
+                        position: absolute;
+                        left: 2px;
+                        top: 0;
+                        border-color: transparent #483601;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 8px 8px 0px 0px;
+                    }
+
+                    li.nav-item-why-us{
+                        /*margin-left: 63px;*/
+                        a.before-why-us{
+                            width: 100px;
+                            text-align: center;
+                        }
+                        a.before-why-us:hover{
+                            color: @color_White;
+                        }
+                        a.before-why-us:hover::before{
+                            content: '';
+                            position: absolute;
+                            left: 10px;
+                            top: 102px;
+                            border-color: transparent @background_menu;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 50px 10px 50px;
+                        }
+                    }
+                    li.nav-item-shop{
+                        a.before-shop{
+                            width: 100px;
+                            text-align: center;
+                        }
+                        a.before-shop:hover{
+                            color: @color_White;
+                        }
+                        a.before-shop:hover::before{
+                            content: '';
+                            position: absolute;
+                            left: 10px;
+                            top: 102px;
+                            border-color: transparent @background_menu;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 50px 10px 50px;
+                        }
+                    }
+                    li.nav-item-blog{
+                        a.before-blog{
+                            width: 100px;
+                            text-align: center;
+                        }
+                        a.before-blog:hover{
+                            color: @color_White;
+                        }
+                        a.before-blog:hover::before{
+                            content: '';
+                            position: absolute;
+                            left: 10px;
+                            top: 102px;
+                            border-color: transparent @background_menu;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 50px 10px 50px;
+                        }
+                    }
+                    li.nav-item-portfolio{
+                        a.before-portfolio{
+                            width: 100%;
+                            text-align: center;
+                        }
+                        a.before-portfolio:hover{
+                            color: @color_White;
+                        }
+                        a.before-portfolio:hover::before{
+                            content: '';
+                            position: absolute;
+                            left: 10px;
+                            top: 102px;
+                            border-color: transparent @background_menu;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 56px 10px 56px;
+                        }
+                    }
+                    li.nav-item-features{
+                        a.before-features{
+                            width: 100%;
+                            text-align: center;
+                        }
+                        a.before-features:hover{
+                            color: @color_White;
+                        }
+                        a.before-features:hover::before{
+                            content: '';
+                            position: absolute;
+                            left: 10px;
+                            top: 102px;
+                            border-color: transparent @background_menu;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 51.5px 10px 51.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 1199px){
+        nav.navbar{
+            div#navbarSupportedContentXL{
+                z-index: 5;
+                background: #fff;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 128px;
+                ul.navbar-nav{
+                    li.active{
+                        a.nav-link{
+                            text-transform: uppercase;
+                            font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            color: @color_White;
+                            padding: 13px 18px;
+                        }
+                        .dropdown-menu{
+                            border-radius: 0px;
+                            background: @color_White;
+                            a.dropdown-item{
+                                text-transform: uppercase;
+                                font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                                font-style: normal;
+                                color: #483601;
+                                padding: 13px 35px;
+                            }
+                            a.dropdown-item:hover{
+                                background: @background_menu;
+                                color: @color_White;
+                            }
+                        }
+                    }
+                    li.nav-item{
+                        a.nav-link{
+                            text-transform: uppercase;
+                            font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                            font-style: normal;
+                            color: #483601;
+                            padding: 13px 18px;
+                        }
+                        .dropdown-menu{
+                            border-radius: 0px;
+                            background: none;
+                            a.dropdown-item{
+                                text-transform: uppercase;
+                                font: 15px/20px 'BenchNine', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                                font-style: normal;
+                                color: #483601;
+                                padding: 13px 35px;
+                            }
+                            a.dropdown-item:hover{
+                                background: @background_menu;
+                                color: @color_White;
+                            }
+                        }
+                    }
+                    li.nav-item:hover a.nav-link{
+                        background: @background_menu;
+                        color: @color_White;
+                    }
+                }
+            }
+        }
+    }
 }
