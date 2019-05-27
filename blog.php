@@ -19,8 +19,8 @@ $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
 $less->compileFile('blocks/1534/less/1534.less', 'blocks/1534/css/1534.css');
 $less->compileFile('blocks/1535/less/1535.less', 'blocks/1535/css/1535.css');
 $less->compileFile('blocks/1536/less/1536.less', 'blocks/1536/css/1536.css');
-$less->compileFile('blocks/1545/less/1545.less', 'blocks/1545/css/1545.css');
-$less->compileFile('blocks/1546/less/1546.less', 'blocks/1546/css/1546.css');
+$less->compileFile('blocks/1545/less/1545.less', 'blocks/1535/css/1545.css');
+$less->compileFile('blocks/1546/less/1546.less', 'blocks/1536/css/1546.css');
 $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 ?>
 
