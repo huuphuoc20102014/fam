@@ -60,5 +60,19 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
     <?php include $dir_block . '/blocks/1538/1538-content.php'; ?>
     <?php include $dir_block . '/blocks/1539/1539-content.php'; ?>
     <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
+    
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cea1f36a667a0210d5976a9/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>

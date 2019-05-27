@@ -29,9 +29,11 @@
   margin-top: -18px;
   padding-bottom: 20px;
 }
-.type-1526 .agricul-tural-news .text-view h3 {
+.type-1526 .agricul-tural-news .text-view a {
   text-transform: capitalize;
   font-size: 21px;
+  text-decoration: none;
+  color: #FFC00A;
 }
 .type-1526 .agricul-tural-news .img-view img.img-responsive {
   display: block;
