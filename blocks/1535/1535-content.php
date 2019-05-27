@@ -25,22 +25,14 @@ $url_path = str_replace('\\', '/', $url_path);
                 <header>
                     <h1>
                         <i class="fa fa-book" aria-hidden="true"></i>
-                        <a href="#">Autumn Harvest</a>
+                        <a href="#">Một số thông tin thêm</a>
                     </h1>
                 </header>
                 <footer class="entry-meta">
                     <a href="#" onclick="cmsmsLike(527); return false;" id="cmsmsLike-527" class="cmsmsLike"><i
                         class="fa fa-heart-o" aria-hidden="true"></i><span> 69</span>
                     </a>
-                    <abbr title="March 13, 2013">March 13, 2013
-
-                    </abbr>
-                    / <a href="#">1 Comment</a>
-                    / <span>in
-                        <a href="#" rel="category tag">Standard Post With an Image</a>
-                    </span>
-                    / <span>by <a href="#" title="Posts by Steven Masters" rel="author">Steven
-                    Masters</a></span>
+                    <span>Lượt <a href="#" title="Posts by Steven Masters" rel="author">yêu thích</a></span>
                 </footer>
 
                 <p>We don’t just produce wordpress themes. We give life to whole microcosms, where beautiful

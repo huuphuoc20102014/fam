@@ -20,27 +20,20 @@ $url_path = str_replace('\\', '/', $url_path);
             <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
                 <ul class="navbar-nav mr-auto">
                     <li class="active">
-                        <a class="nav-link dropdown-toggle before-home" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link before-home" href="home.php">
                             Home
-                            <span class="sr-only">(current)</span>
+                            <!-- <span class="sr-only">(current)</span> -->
                         </a>
-                        <div class="dropdown-menu">
+                        <!-- <div class="dropdown-menu">
                             <a class="dropdown-item" href="home.php">Home Page 1</a>
                             <a class="dropdown-item" href="#">Home Page 2</a>
                             <a class="dropdown-item" href="#">Home Page 3</a>
-                        </div>
+                        </div> -->
                     </li>
-                    <li class="nav-item dropdown nav-item-features">
-                        <a class="nav-link dropdown-toggle before-features" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Features
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Shortcodes</a>
-                            <a class="dropdown-item" href="#">Block Shortcodes</a>
-                            <a class="dropdown-item" href="#">Something here</a>
-                        </div>
+                    <li class="nav-item nav-item-blog">
+                        <a class="nav-link before-blog" href="blog.php">About</a>
                     </li>
-                    <li class="nav-item dropdown nav-item-portfolio">
+                    <!-- <li class="nav-item dropdown nav-item-portfolio">
                         <a class="nav-link dropdown-toggle before-portfolio" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Portfolio
                         </a>
@@ -49,7 +42,7 @@ $url_path = str_replace('\\', '/', $url_path);
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                    </li>
+                    </li> -->
                     <li class="nav-item nav-item-blog">
                         <a class="nav-link before-blog" href="blog.php">Blog</a>
                     </li>
