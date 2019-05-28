@@ -36,15 +36,15 @@ if (isset($_GET['product-id'])) {
         <div class="content-type-1539">
             <!-- BEGIN CONTENT-->
             <div class="tabs">
-                <p class="count">Showing all 16 results</p>
+                <p class="count">tất cả sản phẩm</p>
                 <form class="ordering" method="get">
                     <select name="orderby" class="orderby">
-                        <option value="menu_order" selected="selected">Default sorting</option>
-                        <option value="popularity">Sort by popularity</option>
-                        <option value="rating">Sort by average rating</option>
-                        <option value="date">Sort by newness</option>
-                        <option value="price">Sort by price: low to high</option>
-                        <option value="price-desc">Sort by price: high to low</option>
+                        <option value="menu_order" selected="selected">mặt hàng kinh doanh</option>
+                        <option value="popularity">mặt hàng rau</option>
+                        <option value="rating">mặt hàng củ</option>
+                        <option value="date">mặt hàng quả</option>
+                        <option value="price">mặt hàng hạt</option>
+                        <option value="price-desc">mặt hàng khô</option>
                     </select>
                 </form>
             </div>

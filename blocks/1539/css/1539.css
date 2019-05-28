@@ -78,6 +78,7 @@
   margin: 0;
   padding: 9px 10px;
   color: white;
+  text-transform: capitalize;
 }
 .type-1539 .content-type-1539 .tabs .ordering {
   float: right;
@@ -95,6 +96,7 @@
   height: 36px;
   margin: 0;
   padding: 9px 9px 8px;
+  text-transform: capitalize;
 }
 .type-1539 .content-type-1539 del {
   color: #B0B0AF;
