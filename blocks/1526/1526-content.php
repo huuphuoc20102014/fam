@@ -12,7 +12,7 @@ $url_path = str_replace('\\', '/', $url_path);
 <div class="type-1526">
     <div class="agricul-tural-news">
         <div class="agricul-tural">
-            <h2>agricul tural news</h2>
+            <h2>nông sản việt</h2>
         </div>
         <div class="row view-border-1">
             <div class="col-md-4 col-sm-4 col-xs-12">
@@ -22,9 +22,10 @@ $url_path = str_replace('\\', '/', $url_path);
             </div>
             <div class="col-md-8 col-sm-8 col-xs-12">
                 <div class="text-view">
-                    <h3>autumn harvest</h3>
+                    <a href="https://tuoitre.vn/nong-san-da-lat.html">thông tin về nông sản đà lạt</a>
                     <p>
-                        We don’t just produce wordpress themes. We give life to whole microcosms, where beautiful designs are powered by immense functionality.
+                        Đà Lạt là thành phố trực thuộc tỉnh Lâm Đồng nằm trên Cao nguyên Lâm Viên thuộc vùng Tây Nguyên.
+                        Thành Phố Đà Lạt cách Biên Hòa(Đồng Nai) 278km, thủ đô Hà Nội 1.481km, Tp. Hồ Chí Minh 293km, Nha Trang (Khánh Hòa) 205km.
                     </p>
                 </div>
             </div> 
@@ -38,9 +39,9 @@ $url_path = str_replace('\\', '/', $url_path);
             </div>
             <div class="col-md-8 col-sm-8 col-xs-12">
                 <div class="text-view">
-                    <h3>Growing Turnips</h3>
+                    <a href="https://tuoitre.vn/nong-san-da-lat.html">Nông sản sạch</a>
                     <p>
-                        Drag’n’drop content parts across your page with a handy WYSIWYG Content Composer, as well as easily edit their appearance, insert.
+                        Hạn chế đến mức thấp nhất hoặc không sử dụng phân hoá học, thuốc trừ sâu, thuốc kích thích nhằm giảm tối đa dư lượng độc tố có trong nông sản như Nitrat, thuốc trừ sâu, kim loại nặng, các vi sinh vật gây bệnh...
                     </p>
                 </div>
             </div>

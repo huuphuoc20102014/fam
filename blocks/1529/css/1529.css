@@ -65,6 +65,10 @@
 .type-1529 .view-recent-testimonials .swiper-container .swiper-wrapper p {
   padding: 25px 15px 25px 15px;
 }
+.type-1529 .view-recent-testimonials .swiper-container .swiper-wrapper p a {
+  text-decoration: none;
+  color: #ffc00a;
+}
 .type-1529 .view-recent-testimonials .swiper-container .view-pointer {
   float: right;
 }
@@ -121,18 +125,23 @@
 }
 .type-1529 .view-time .view-years .years span {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: capitalize;
 }
 .type-1529 .view-time .view-years p {
-  padding: 25px 15px 25px 15px;
+  padding: 0 15px 10px 15px;
+  text-transform: capitalize;
 }
 .type-1529 .view-time .view-years p a {
   text-decoration: none;
   color: #61200c;
+  text-transform: capitalize;
 }
 .type-1529 footer#footer .footer_inner {
   padding: 30px 20px;
+}
+.type-1529 footer#footer .footer_inner span.copyright {
+  color: #61200c;
 }
 .type-1529 footer#footer span.social_icons {
   padding: 30px 20px;
