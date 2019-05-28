@@ -24,10 +24,10 @@ $url_path = str_replace('\\', '/', $url_path);
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="view-name">
-                                    <span><a href="#">mr.jones/</a>manor farm</span>
+                                    <span><a href="#">ms.oanh/</a>sake trần</span>
                                 </div>
                                 <a class="view-img" href="#">
-                                    <img src="<?php echo $url_path ?>/images/img-1.jpg" alt="s1" class="img-responsive">
+                                    <img src="<?php echo $url_path ?>/images/img-2.jpg" alt="s1" class="img-responsive">
                                 </a>
                                 <div class="view-pointer">
                                     <span><i class="fa fa-angle-left"></i></span>
