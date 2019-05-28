@@ -1,11 +1,43 @@
 @text-color:#4CAF50;
 @background-color:#4CAF50;
 @border-color: #C0C0C0;
+@background-facebook:#4267B2;
+@background-facebook-hover:#6883ba;
+@background-zalo-hover:#488ff2;
 .type-1520{
     font-size:14px;
     .fam-header{
         padding:10px 0;
-
+        .add-link{
+            margin-top: 6px;
+            a.view-facebook{
+                background: @background-facebook;
+                /*padding: 0 50px;*/
+                border-radius: 5px 5px;
+                font-size: 25px;
+                i.fa-facebook-f{
+                    color: #fff;
+                    width: 113px;
+                    height: 33px;
+                    text-align: center;
+                }
+            }
+            a.view-facebook:hover{
+                background: @background-facebook-hover;
+            }
+            a.view-zalo{
+                margin-left: 5px;
+                img.img-responsive{
+                    width: 113px;
+                    margin-top: -14px;
+                    height: 33px;
+                    border-radius: 5px 5px;
+                }
+            }
+            a.view-zalo:hover{
+                opacity: 0.7;
+            }
+        }
         ul {
             list-style-type: none;
             margin: 0;
@@ -33,17 +65,26 @@
                 border: none;
                 padding: 6px;
                 background: none;
-                i{
-                    color: #fff;
+                border-radius: 5px 5px;
+                i.fa-search{
+                    color: #ffcb33;
+                }
+                i.fa-shopping-cart{
+                    color: #ffcb33;
                 }
             }
+            button:hover{
+                background: #fff;
+                border-radius: 5px 5px;
+            }
+
             input{
                 border: none;
                 border-left: 1px solid @border-color;
                 padding: 6px;
                 margin-top: 7px;
-                    width: 130px;
-
+                width: 130px;
+                border-radius: 5px 5px;
             }
         }
         .fam-menu{
@@ -53,6 +94,35 @@
             padding: 0;
             font-weight: bold;
             color: #ffcb33;
+        }
+
+    }
+    @media only screen and (min-width: 766px) and (max-width: 1199px){
+        .fam-header{
+            .add-link{
+                margin-top: 6px;
+                a.view-facebook{
+                    background: @background-facebook;
+                    /*padding: 0 50px;*/
+                    border-radius: 5px 5px;
+                    font-size: 25px;
+                    i.fa-facebook-f{
+                        color: #fff;
+                        width: 65px;
+                        height: 33px;
+                        text-align: center;
+                    }
+                }
+                a.view-zalo{
+                    margin-left: 5px;
+                    img.img-responsive{
+                        width: 65px;
+                        margin-top: -14px;
+                        height: 33px;
+                        border-radius: 5px 5px;
+                    }
+                }
+            }
         }
     }
 }

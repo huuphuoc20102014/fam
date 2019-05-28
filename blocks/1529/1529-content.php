@@ -13,7 +13,7 @@ $url_path = str_replace('\\', '/', $url_path);
         <div class="row footer-row">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="one_third">
-                    <h3 class="fb-facebook">facebook</h3>
+                    <a href="#"><h3 class="fb-facebook">fanpage facebook sake tran</h3></a>
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuylele24%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
@@ -24,10 +24,10 @@ $url_path = str_replace('\\', '/', $url_path);
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="view-name">
-                                    <span><a href="#">mr.jones/</a>manor farm</span>
+                                    <span><a href="#">ms.oanh/</a>sake trần</span>
                                 </div>
                                 <a class="view-img" href="#">
-                                    <img src="<?php echo $url_path ?>/images/img-1.jpg" alt="s1" class="img-responsive">
+                                    <img src="<?php echo $url_path ?>/images/img-2.jpg" alt="s1" class="img-responsive">
                                 </a>
                                 <div class="view-pointer">
                                     <span><i class="fa fa-angle-left"></i></span>

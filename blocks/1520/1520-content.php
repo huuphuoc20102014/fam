@@ -11,12 +11,17 @@ $url_path = str_replace('\\', '/', $url_path);
     <div class="container">
         <div class="fam-header row">
             <div class="col-md-3">
-                <a href="1.php">
-                    <img src="<?php echo $url_path ?>/image/logo.png" alt="erorr" class="img-responsive">
-                </a>
+                <div class="add-link">
+                    <a class="view-facebook" href="https://www.facebook.com/saketran1987">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a class="view-zalo" href="http://zaloapp.com/qr/p/esnnrho4ljtc">   
+                        <img src="<?php echo $url_path ?>/image/zalo.jpg" alt="zalo" class="img-responsive">
+                    </a>
+                </div>
             </div>
             <div class="col-md-5 fam-menu">
-                
+
             </div>
             <div class="col-md-4 fam-search">
                 <form action="#">

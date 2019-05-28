@@ -18,9 +18,9 @@ $url_path = str_replace('\\', '/', $url_path);
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="text-view">
-                    <a href="#">perfect recipes to cook delicious organic dishes.</a>
+                    <a href="https://monngonmoingay.com/">móm ngon mỗi ngày trong tích tắc</a>
                     <!-- <h3>perfect recipes to cook delicious organic dishes.</h3> -->
-                    <a href="#" class="link-1"><i class="fa fa-angle-right"></i></a>
+                    <a href="https://monngonmoingay.com/" class="link-1"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div> 
         </div>
@@ -33,8 +33,8 @@ $url_path = str_replace('\\', '/', $url_path);
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="text-view">
-                    <a href="#">visit our organic restaurant. book online.</a>
-                    <a href="#" class="link-2"><i class="fa fa-angle-right"></i></a>
+                    <a href="http://kenh14.vn/cac-mon-an-tot-cho-suc-khoe.html">Các Món Ăn Tốt Cho Sức Khỏe</a>
+                    <a href="http://kenh14.vn/cac-mon-an-tot-cho-suc-khoe.html" class="link-2"><i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
