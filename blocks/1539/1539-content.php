@@ -54,16 +54,16 @@ if (isset($_GET['product-id'])) {
                         <div class="item">
                             <div class="thumb">
 
-                                <img src="http://<?php echo $url_path ?>/images/1539-1.jpg" alt="#"  class="img-responsive">
+                                <img src="<?php echo 'image/' . $products['product-images']; ?>" alt="#"  class="img-responsive">
                                 <div class="overlay">
-                                    <div class="text1">
+                                    <a class="text1" href="#">
                                         <img src="http://<?php echo $url_path ?>/images/basket_hover.png" alt="#">
                                         <span>TO CART</span>
-                                    </div>
-                                    <div class="text2">
+                                    </a>
+                                    <a class="text2" href="#">
                                         <img src="http://<?php echo $url_path ?>/images/details_hover.png" alt="#" >
                                         <span>DETAILS</span>
-                                    </div>
+                                    </a>
                                 </div>
 
 
@@ -79,15 +79,9 @@ if (isset($_GET['product-id'])) {
                                  <a href="#"><?php echo $products['product-name']; ?></a>
                             </h6>
                             <div class="price">
-                                <del>
-                                    <span>
-                                        <span>$</span>
-                                        16.00
-                                    </span>
-                                </del>
                                 <span>
                                     <span>$</span>
-                                    <p><?php echo number_format($products['product-price'], 0, ',', '.'); ?> ₫</p>
+                                    <?php echo number_format($products['product-price'], 0, ',', '.'); ?> ₫
                                 </span>
                             </div>
                         </div>
