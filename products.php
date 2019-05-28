@@ -2,44 +2,44 @@
 include './db.php';
 class products extends db {
     public function getProducts($keyword) {
-        $sql = 'SELECT * FROM `products` WHERE `product_name` LIKE "%' . $keyword . '%"';
+        $sql = 'SELECT * FROM `fam` WHERE `product-name` LIKE "%' . $keyword . '%"';
         $data = $this->select($sql);
         return $data;
     }
     public function addnew($data) {
-        $sql = 'INSERT INTO products(product_name, product_price, category_id, product_image)' . 'VALUES ("'
-                . $data['product_name'] . '","'
-                . $data['product_price'] . '","'
-                . $data['category_id'] . '","'
-                . $data['product_image'] . '")';
+        $sql = 'INSERT INTO fam(product-name, product-price, product-category-id, product-image)' . 'VALUES ("'
+                . $data['product-name'] . '","'
+                . $data['product-price'] . '","'
+                . $data['product-product-category-id'] . '","'
+                . $data['product-image'] . '")';
         $this->query($sql);
     }
     public function Delete($id) {
-        $sql = 'DELETE FROM `products` WHERE  `product_id`=' . $id;
+        $sql = 'DELETE FROM `fam` WHERE  `product-id`=' . $id;
         $this->query($sql);
     }
     public function getProductsById($id) {
-        $sql = 'SELECT * FROM `products` WHERE `product_id` LIKE "%' . $id . '%"';
+        $sql = 'SELECT * FROM `fam` WHERE `product-id` LIKE "%' . $id . '%"';
         $data = $this->select($sql);
         return $data;
     }
     public function findUser($id) {
-        $sql = 'SELECT * FROM `products` WHERE  `product_id`=' . $id;
+        $sql = 'SELECT * FROM `fam` WHERE  `product-id`=' . $id;
         $product = $this->select($sql);
         return $product[0];
     }
     public function updateUser($data) {
         
-        $sql = 'UPDATE `products` ' .
-                'SET `product_name` = "' . $data['product_name'] . '", ' .
-                    '`category_id` = "' . $data['category_id'] . '", '.
-                    '`product_image` = "' . $data['product_image'] . '", '.
-                    '`product_price` = "' . $data['product_price'] . '"'.
-                'WHERE `product_id=`' . $data['product_id'];
+        $sql = 'UPDATE `fam` ' .
+                'SET `product-name` = "' . $data['product-name'] . '", ' .
+                    '`product-category-id` = "' . $data['product-category-id'] . '", '.
+                    '`product-image` = "' . $data['product-image'] . '", '.
+                    '`product-price` = "' . $data['product-price'] . '"'.
+                'WHERE `product-id=`' . $data['product-id'];
         $this->query($sql);
     }
     public function getAll() {
-        $sql = 'SELECT * FROM products';
+        $sql = 'SELECT * FROM fam';
         $product = $this->select($sql);
         return $product;
     }
@@ -50,7 +50,7 @@ class products extends db {
     }
     public function getPage($p) {
         $n = ($p - 1) * 12;
-        $sql = 'SELECT * FROM products LIMIT ' . $n . ',12';
+        $sql = 'SELECT * FROM fam LIMIT ' . $n . ',12';
         $product = $this->select($sql);
         return $product;
     }
