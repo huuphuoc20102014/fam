@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2019 at 04:05 AM
+-- Generation Time: May 28, 2019 at 06:58 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `fam`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blog`
+--
+
+CREATE TABLE `blog` (
+  `blog-id` int(11) NOT NULL,
+  `blog-videos` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `blog-images` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `blog-tieude` varchar(55) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `blog-bangtin` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -70,7 +84,7 @@ INSERT INTO `fam` (`product-id`, `product-category-id`, `product-name`, `product
 (6, 1, 'Hoa bí', 999, 'hoabi.jpg'),
 (7, 1, 'Rau mòng tơi', 999, 'mong-toi.jpg'),
 (8, 1, 'Cải thìa', 999, 'rau-cai-thia.jpg'),
-(9, 1, 'Rau cải xanh', 999, 'rau-cai-xanh_grande.jpg'),
+(9, 1, 'Rau cải xanh', 999, 'rau-cai-xanh1.png'),
 (10, 1, 'Rau dền', 999, 'rau-den.jpg'),
 (11, 1, 'Rau dền tím', 999, 'rau-den.jpg'),
 (12, 1, 'Rau lang', 999, 'rau-lang.jpg'),
@@ -89,13 +103,12 @@ INSERT INTO `fam` (`product-id`, `product-category-id`, `product-name`, `product
 (25, 1, 'Bấp cải tím', 999, 'bap-cai-tim2.jpg'),
 (26, 3, 'Bơ ', 999, 'bo.jpg'),
 (27, 3, 'Bưởi da xanh', 999, 'buoi.jpg'),
-(28, 3, 'Cà chua', 999, 'ca_chua.jpg'),
+(28, 3, 'Cà chua', 999, 'ca-chua.png'),
 (29, 3, 'Cà chua chocolale', 999, 'Ca-chocolate.jpg'),
 (30, 3, 'Cà chua bi vàng', 999, 'ca-chua-bi-vang.jpg'),
 (31, 3, 'Cà chua bi đỏ', 999, 'cachuapi.jpg'),
 (32, 3, 'Chuối dạ hương', 999, 'chuoi-dạ-hương.jpg'),
 (33, 3, 'Đậu ván', 999, 'dau van.jpg'),
-(34, 3, 'Đậu rồng', 999, 'hqdefault.jpg'),
 (35, 3, 'Dâu tây', 999, 'dautay.jpg'),
 (36, 3, 'Dưa chuột', 999, 'dua-leo.jpg'),
 (37, 3, 'Ớt chuông', 999, 'ot-chuong-2.jpg'),
@@ -112,6 +125,12 @@ INSERT INTO `fam` (`product-id`, `product-category-id`, `product-name`, `product
 --
 
 --
+-- Indexes for table `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`blog-id`);
+
+--
 -- Indexes for table `category`
 --
 ALTER TABLE `category`
@@ -126,6 +145,12 @@ ALTER TABLE `fam`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `blog-id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `category`
