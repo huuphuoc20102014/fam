@@ -15,17 +15,28 @@
   background: #fff;
   margin: 0;
 }
-.type-1529 .one_third h3.fb-facebook {
+.type-1529 .one_third a {
+  text-decoration: none;
+  color: #FFC00A;
+}
+.type-1529 .one_third a h3.fb-facebook {
   text-transform: uppercase;
   margin-bottom: 25px;
   font: 15px/18px 'Headland One', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
   font-weight: 600;
 }
+.type-1529 .one_third a:hover {
+  color: #000;
+}
 .type-1529 .view-recent-testimonials h3.fb-testimonials {
+  color: #FFC00A;
   text-transform: uppercase;
   margin-bottom: 25px;
   font: 15px/18px 'Headland One', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
   font-weight: 600;
+}
+.type-1529 .view-recent-testimonials h3.fb-testimonials:hover {
+  color: #000;
 }
 .type-1529 .view-recent-testimonials .swiper-container {
   background-color: #fffae6;
@@ -86,10 +97,14 @@
   color: #61200c;
 }
 .type-1529 .view-time h3.fb-twitter {
+  color: #FFC00A;
   text-transform: uppercase;
   margin-bottom: 25px;
   font: 15px/18px 'Headland One', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
   font-weight: 600;
+}
+.type-1529 .view-time h3.fb-twitter:hover {
+  color: #000;
 }
 .type-1529 .view-time .view-years {
   background-color: #fffae6;

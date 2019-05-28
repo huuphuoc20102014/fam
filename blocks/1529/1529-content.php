@@ -13,7 +13,7 @@ $url_path = str_replace('\\', '/', $url_path);
         <div class="row footer-row">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="one_third">
-                    <h3 class="fb-facebook">facebook</h3>
+                    <a href="#"><h3 class="fb-facebook">fanpage facebook sake tran</h3></a>
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuylele24%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
