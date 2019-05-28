@@ -6,20 +6,12 @@
 .type-1523 .col-bagr {
   background-color: #ff6f24;
 }
-.type-1523 h2 {
-  margin-bottom: 10px;
+.type-1523 h1 {
+  margin-bottom: 20px;
   color: #fff;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-}
-.type-1523 a.view-text {
-  margin-bottom: 10px;
-  color: #fff;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 .type-1523 .caption {
   text-align: center;
@@ -45,7 +37,6 @@
 }
 .type-1523 .images {
   background-color: #ff6f24;
-  height: 450px;
 }
 .type-1523 .images::after {
   content: '';
