@@ -31,7 +31,7 @@ $url_path = str_replace('\\', '/', $url_path);
                         </div> -->
                     </li>
                     <li class="nav-item nav-item-blog">
-                        <a class="nav-link before-blog" href="blog.php">About</a>
+                        <a class="nav-link before-blog" href="about.php">About</a>
                     </li>
                     <!-- <li class="nav-item dropdown nav-item-portfolio">
                         <a class="nav-link dropdown-toggle before-portfolio" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,9 +49,9 @@ $url_path = str_replace('\\', '/', $url_path);
                     <li class="nav-item nav-item-shop">
                         <a class="nav-link before-shop" href="shop.php">Shop</a>
                     </li>
-                    <li class="nav-item nav-item-why-us">
+                    <!-- <li class="nav-item nav-item-why-us">
                         <a class="nav-link before-why-us" href="#">Why US?</a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>

@@ -11,7 +11,7 @@ $url_path = str_replace('\\', '/', $url_path);
     <div class="container">
         <div class="headline">
             <h1 class="heading-title">
-                Blog
+                Shop
             </h1>
         </div>
 
