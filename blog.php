@@ -19,8 +19,8 @@ $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
 $less->compileFile('blocks/1534/less/1534.less', 'blocks/1534/css/1534.css');
 $less->compileFile('blocks/1535/less/1535.less', 'blocks/1535/css/1535.css');
 $less->compileFile('blocks/1536/less/1536.less', 'blocks/1536/css/1536.css');
-$less->compileFile('blocks/1545/less/1545.less', 'blocks/1535/css/1545.css');
-$less->compileFile('blocks/1546/less/1546.less', 'blocks/1536/css/1546.css');
+$less->compileFile('blocks/1545/less/1545.less', 'blocks/1545/css/1545.css');
+$less->compileFile('blocks/1546/less/1546.less', 'blocks/1546/css/1546.css');
 $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 ?>
 
@@ -57,30 +57,29 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 </head>
 
 <body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0;
-          background-repeat: no-repeat;">
-  <div class="top-header">
-    <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
-    <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
-  </div>
-  <div class="body-blog">
-    <?php include $dir_block . '/blocks/1534/1534-content.php'; ?>
-    <div class="header-slide">
-      <div class="container">
-        <div class="row">
-          <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
-          <?php include $dir_block . '/blocks/1536/1536-content.php'; ?>
-        </div>
-        <div class="row">
-          <?php include $dir_block . '/blocks/1545/1545-content.php'; ?>
-          <?php include $dir_block . '/blocks/1546/1546-content.php'; ?>
-        </div>
+background-repeat: no-repeat;">
+<div class="top-header">
+  <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
+  <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
+</div>
+<div class="body-blog">
+  <?php include $dir_block . '/blocks/1534/1534-content.php'; ?>
+  <div class="header-slide">
+    <div class="container">
+      <div class="row">
+        <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
+        <?php include $dir_block . '/blocks/1536/1536-content.php'; ?>
+      </div>
+      <div class="view-post" >
+        <?php include $dir_block . '/blocks/1545/1545-content.php'; ?>
       </div>
     </div>
   </div>
-  
-  <div class="footer">
-    <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
-  </div>
-  
+</div>
+
+<div class="footer">
+  <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
+</div>
+
 </body>
 </html>

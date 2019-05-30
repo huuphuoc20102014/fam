@@ -25,14 +25,14 @@ $url_path = str_replace('\\', '/', $url_path);
                 <header>
                     <h1>
                         <i class="fa fa-book" aria-hidden="true"></i>
-                        <a href="#">Một số thông tin thêm</a>
+                        <a href="#">Ăn rau củ quả sạch rất tốt cho sức khỏe của gia đình</a>
                     </h1>
                 </header>
                 <footer class="entry-meta">
                     <a href="#" onclick="cmsmsLike(527); return false;" id="cmsmsLike-527" class="cmsmsLike"><i
                         class="fa fa-heart-o" aria-hidden="true"></i><span> 69</span>
                     </a>
-                    <span>Lượt <a href="#" title="Posts by Steven Masters" rel="author">yêu thích</a></span>
+                    <span><a href="#" title="Posts by Steven Masters" rel="author">Lượt yêu thích</a></span>
                 </footer>
 
                 <p>We don’t just produce wordpress themes. We give life to whole microcosms, where beautiful
@@ -40,7 +40,7 @@ $url_path = str_replace('\\', '/', $url_path);
                     not when the next product is released for sale, but when our customers share their great
                 user experience and showcase the beautiful websites they have managed to…</p>
 
-                <div class="cl"> <a href="#">Read More</a>
+                <div class="cl"> <a href="#">đọc thêm</a>
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </div>
             </div>

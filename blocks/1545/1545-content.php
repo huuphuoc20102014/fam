@@ -8,8 +8,8 @@ $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 ?>
 
-<div class="col-md-9 col-sm-6 col-xs-12">
-    <div class="type-1545">
+<div class="type-1545">
+    <div class="container">
         <article>
             <div class="item">
                 <div class="thumb">
@@ -19,22 +19,14 @@ $url_path = str_replace('\\', '/', $url_path);
 
                     <h1>
                         <i class="fa fa-book" aria-hidden="true"></i>
-                        <a href="#">Blueberry Feast</a>
+                        <a href="#">những hoa quả  tốt cho sức khỏe</a>
                     </h1>
                 </header>
                 <footer class="entry-meta">
                     <a href="#" onclick="cmsmsLike(527); return false;" id="cmsmsLike-527" class="cmsmsLike"><i
                         class="fa fa-heart-o" aria-hidden="true"></i><span> 69</span>
                     </a>
-                    <abbr title="March 13, 2013">March 13, 2013
-
-                    </abbr>
-                    / <a href="#">1 Comment</a>
-                    / <span>in
-                        <a href="#" rel="category tag">Standard Post With an Image</a>
-                    </span>
-                    / <span>by <a href="#" title="Posts by Steven Masters" rel="author">Steven
-                    Masters</a></span>
+                    <span><a href="#" title="Posts by Steven Masters" rel="author">Lượt yêu thích</a></span>
                 </footer>
 
                 <p>We don’t just produce wordpress themes. We give life to whole microcosms, where beautiful
@@ -43,10 +35,11 @@ $url_path = str_replace('\\', '/', $url_path);
                 user experience and showcase the beautiful websites they have managed to…</p>
 
                 <div class="cl"> 
-                    <a href="#">Read More</a>
+                    <a href="#">đọc thêm</a>
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 </div>
             </div>
         </article>
     </div>
+    
 </div>

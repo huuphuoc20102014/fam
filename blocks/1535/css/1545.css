@@ -39,6 +39,11 @@
 .type-1545 .cl {
   float: right;
 }
+.type-1545 .cl a {
+  text-decoration: none;
+  color: black !important;
+  text-transform: uppercase;
+}
 .type-1545 img {
   width: 100%;
 }

@@ -22,24 +22,19 @@ $url_path = str_replace('\\', '/', $url_path);
                 </div>
             </aside>
             <aside id="archives">
-                <h6 class="widgettitle">Archives</h6>
+                <h6 class="widgettitle">Bài đăng mới</h6>
                 <ul>
-                    <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> March 2013</a></li>
+                    <li><a href="blog.php"><i class="fa fa-check" aria-hidden="true"></i> cập nhật</a></li>
                 </ul>
             </aside>
             <aside id="meta">
 
-                <h6 class="widgettitle">Meta</h6>
+                <h6 class="widgettitle">Phân loại</h6>
                 <ul>
-
-                    <li><a href="#"> <i class="fa fa-check" aria-hidden="true"></i> Log in</a></li>
-
-                    <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Entries <abbr>RSS</abbr></a></li>
-
-                    <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Comments <abbr>RSS</abbr></a>
-                    </li>
-
-                    <li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> WordPress.org</a></li>
+                    <li><a href="blog.php"> <i class="fa fa-check" aria-hidden="true"></i> Tất cả</a></li>
+                    <li><a href="blog.php"><i class="fa fa-check" aria-hidden="true"></i> nông sản rau</a></li>
+                    <li><a href="blog.php"><i class="fa fa-check" aria-hidden="true"></i> nông sản củ</a></li>
+                    <li><a href="blog.php"><i class="fa fa-check" aria-hidden="true"></i> nông sản quả</a></li>
                 </ul>
             </aside>
         </div>

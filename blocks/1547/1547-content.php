@@ -25,50 +25,80 @@ $url_path = str_replace('\\', '/', $url_path);
 				<div class="tile scale-anm web all">
 					<img src="<?php echo $url_path ?>/images/1.jpg" alt="" />
 				</div>
-				<div class="tile scale-anm bcards all">
+				<div class="tile scale-anm web all">
 					<img src="<?php echo $url_path ?>/images/2.jpg" alt="" />
-				</div>
-				<div class="tile scale-anm web all">
-					<img src="<?php echo $url_path ?>/images/hinh1.jpg" alt="" />
-				</div>
-				<div class="tile scale-anm web all">
-					<img src="<?php echo $url_path ?>/images/hinh5.jpg" alt="" />
-				</div>
-				<div class="tile scale-anm flyers all">
-					<img src="<?php echo $url_path ?>/images/hinh4.jpg" alt="" />
 				</div>
 				<div class="tile scale-anm bcards all">
 					<img src="<?php echo $url_path ?>/images/3.jpg" alt="" />
 				</div>
-				<div class="tile scale-anm flyers all">
-					<img src="<?php echo $url_path ?>/images/hinh3.jpg" alt="" />
-				</div>
-				<div class="tile scale-anm flyers all">
+				<div class="tile scale-anm bcards all">
 					<img src="<?php echo $url_path ?>/images/4.jpg" alt="" />
 				</div>
-				<div class="tile scale-anm web all">
+				<div class="tile scale-anm bcards all">
 					<img src="<?php echo $url_path ?>/images/5.jpg" alt="" />
 				</div>
-				<div class="tile scale-anm flyers all">
-					<img src="<?php echo $url_path ?>/images/6.jpg" alt="" /> 
+				<div class="tile scale-anm bcards all">
+					<img src="<?php echo $url_path ?>/images/6.jpg" alt="" />
 				</div>
 				<div class="tile scale-anm web all">
 					<img src="<?php echo $url_path ?>/images/7.jpg" alt="" />
 				</div>
-				<div class="tile scale-anm bcards all">
+				<div class="tile scale-anm flyers all">
 					<img src="<?php echo $url_path ?>/images/8.jpg" alt="" />
 				</div>
-				<div class="tile scale-anm web all">
-					<img src="<?php echo $url_path ?>/images/hinh2.jpg" alt="" />
+				<div class="tile scale-anm bcards all">
+					<img src="<?php echo $url_path ?>/images/9.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm flyers all">
+					<img src="<?php echo $url_path ?>/images/10.jpg" alt="" /> 
 				</div>
 				<div class="tile scale-anm bcards all">
-					<img src="<?php echo $url_path ?>/images/hinh.jpg" alt="" />
+					<img src="<?php echo $url_path ?>/images/11.jpg" alt="" />
 				</div>
 				<div class="tile scale-anm web all">
-					<img src="<?php echo $url_path ?>/images/hinh7.jpg" alt="" />
+					<img src="<?php echo $url_path ?>/images/12.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm web all">
+					<img src="<?php echo $url_path ?>/images/13.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">
+					<img src="<?php echo $url_path ?>/images/14.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">
+					<img src="<?php echo $url_path ?>/images/15.jpg" alt="" />
 				</div> 
 				<div class="tile scale-anm bcards all">     
-					<img src="<?php echo $url_path ?>/images/1.jpg" alt="" />
+					<img src="<?php echo $url_path ?>/images/16.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm web bcards all">     
+					<img src="<?php echo $url_path ?>/images/17.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">     
+					<img src="<?php echo $url_path ?>/images/18.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">     
+					<img src="<?php echo $url_path ?>/images/19.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">     
+					<img src="<?php echo $url_path ?>/images/20.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm web all">     
+					<img src="<?php echo $url_path ?>/images/21.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm web all">     
+					<img src="<?php echo $url_path ?>/images/22.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm web all">     
+					<img src="<?php echo $url_path ?>/images/23.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">     
+					<img src="<?php echo $url_path ?>/images/26.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm bcards all">     
+					<img src="<?php echo $url_path ?>/images/27.jpg" alt="" />
+				</div>
+				<div class="tile scale-anm flyers all">     
+					<img src="<?php echo $url_path ?>/images/30.jpg" alt="" />
 				</div>
 			</div>
 		</div>

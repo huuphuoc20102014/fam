@@ -17,6 +17,7 @@ $less->compileFile('blocks/1525/less/blog.less', 'blocks/1525/css/blog.css');
 $less->compileFile('blocks/1520/less/1520.less', 'blocks/1520/css/1520.css');
 $less->compileFile('blocks/1525/less/1525.less', 'blocks/1525/css/1525.css');
 $less->compileFile('blocks/1548/less/1548.less', 'blocks/1548/css/1548.css');
+$less->compileFile('blocks/1149/less/1149.less', 'blocks/1149/css/1149.css');
 $less->compileFile('blocks/1547/less/1547.less', 'blocks/1547/css/1547.css');
 $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 ?>
@@ -39,6 +40,7 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/1525.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1548/css/1548.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1149/css/1149.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1547/css/1547.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1529/css/1529.css" rel="stylesheet" type="text/css" />
   <!-- Library javascript  -->
@@ -47,6 +49,7 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <script src="<?php echo $url_path ?>/blocks/1525/js/bootstrap.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/swiper.min.js"></script>
   <!-- File js  -->
+  <script src="<?php echo $url_path ?>/blocks/1149/js/close-button5.js" type="text/javascript"></script>
   <script src="<?php echo $url_path ?>/blocks/1547/js/1547.js" type="text/javascript"></script>
   <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
 </head>
@@ -61,6 +64,7 @@ background-repeat: no-repeat;">
     <?php include $dir_block . '/blocks/1548/1548-content.php'; ?>
     <div class="container">
         <div class="text-view" style="background: #fff; padding-top: 1px; padding-bottom: 1px;">
+            <?php include $dir_block . '/blocks/1149/1149-content.php'; ?>
             <?php include $dir_block . '/blocks/1547/1547-content.php'; ?>
         </div>
     </div>
