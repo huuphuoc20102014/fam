@@ -54,7 +54,7 @@ if (isset($_GET['product-id'])) {
                         <div class="item">
                             <div class="thumb">
 
-                                <img src="<?php echo 'image/' . $products['product-images']; ?>" alt="#"  class="img-responsive">
+                                <img src="<?php echo 'images/' . $products['product-images']; ?>" alt="#"  class="img-responsive">
                                 <div class="overlay">
                                     <a class="text1" href="#">
                                         <img src="http://<?php echo $url_path ?>/images/basket_hover.png" alt="#">

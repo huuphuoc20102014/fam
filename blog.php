@@ -66,11 +66,9 @@ background-repeat: no-repeat;">
   <?php include $dir_block . '/blocks/1534/1534-content.php'; ?>
   <div class="header-slide">
     <div class="container">
-      <div class="row">
-        <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
-        <?php include $dir_block . '/blocks/1536/1536-content.php'; ?>
-      </div>
+      
       <div class="view-post" >
+        <?php include $dir_block . '/blocks/1535/1535-content.php'; ?>
         <?php include $dir_block . '/blocks/1545/1545-content.php'; ?>
       </div>
     </div>
