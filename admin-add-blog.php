@@ -24,13 +24,15 @@ if(isset($_POST['upload'])) {
 	//declaring variables
 	$filename = $_FILES['uploadfile']['name'];
 	$filetmpname = $_FILES['uploadfile']['tmp_name'];
-
+	$blog_tieude = mysqli_real_escape_string($conn, $_POST['blog_tieude']);
+	$blog_bangtin = mysqli_real_escape_string($conn, $_POST['blog_bangtin']);
+	//$blog_tieude = mysqli_real_escape_string($conn, $_POST['blog_tieude']);
 	//folder where images will be uploaded
 	$folder = './images/';
 	//function for saving the uploaded images in a specific folder
 	move_uploaded_file($filetmpname, $folder.$filename);
 	//inserting image details (ie image name) in the database
-	$sql = "INSERT INTO `blog` (`blog_images`)  VALUES ('$filename')";
+	$sql = "INSERT INTO `blog` (`blog_images`, `blog_tieude`, `blog_bangtin`)  VALUES ('$filename', '$blog_tieude', '$blog_bangtin')";
 	$qry = mysqli_query($conn,  $sql);
 	if( $qry) {
 		echo "image uploaded";

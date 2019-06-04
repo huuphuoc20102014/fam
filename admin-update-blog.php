@@ -27,7 +27,6 @@ $categori = $obj_products->getCategories();
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
 	<!--Header-part-->
 	<div id="header">
 		<h1><a href="admin-blog.php">Trang Chủ</a></h1>
