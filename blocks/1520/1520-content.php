@@ -32,7 +32,7 @@ $url_path = str_replace('\\', '/', $url_path);
                     </button>
                     <button class="fam-login">
                         <i class="fa fa-sign-in" aria-hidden="true"></i>
-                        Login
+                        <a href="login.php">Login</a>
                     </button>
                     <button class="fam-login">
                         <i class="fa fa-sign-in" aria-hidden="true"></i>

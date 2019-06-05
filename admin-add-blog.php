@@ -1,17 +1,4 @@
 <?php
-// include ('admin-add-blog.php');
-// if(isset($_GET['blog_tieude'])){
-// 	$data = [
-// 		'blog_tieude' => $_GET['blog_tieude'],
-// 		'blog_images' => $_GET['uploadfile'],
-// 		'blog_bangtin' => $_GET['blog_bangtin'],
-// 		'category_blog_id' => $_GET['category_blog_id'],
-// 	];
-// 	$obj_products = new products-blog();
-// 	$obj_products->addnew($data);
-// }
-?>
-<?php
 //This code shows how to Upload And Insert Image Into Mysql Database Using Php Html.
 //connecting to uploadFile database.
 $conn = mysqli_connect("localhost", "root", "", "fam");

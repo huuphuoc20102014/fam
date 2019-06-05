@@ -1,0 +1,223 @@
+.type-1054 .cover-bg,
+.type-1054 .cover-bg:after {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.type-1054 .cover-bg {
+  background: url(../images/signup-bg.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  z-index: -10;
+  position: fixed;
+}
+.type-1054 .cover-bg:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: rgba(81,83,94,0.65);
+}
+.type-1054 .top-links {
+  float: right;
+  padding-top: 20px;
+}
+.type-1054 .top-links a {
+  display: inline-block;
+  padding: 9px 44px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  width: 145px;
+  margin-bottom: 20px;
+}
+.type-1054 .top-links span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.type-1054 .btn-facebook {
+  background-color: #3b5998;
+}
+.type-1054 .btn-google {
+  background-color: #dd4b39;
+}
+.type-1054 .btn-top-links {
+  float: right;
+}
+.type-1054 .ember-view {
+  opacity: 0.7;
+}
+.type-1054 .ember-view:hover {
+  opacity: 1;
+}
+.type-1054 .logo {
+  display: block;
+  margin-top: 200px;
+  text-align: center;
+}
+.type-1054 .logo img {
+  width: 150px;
+  display: inline-block;
+}
+.type-1054 .account-container {
+  width: 440px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.type-1054 .account-container h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.type-1054 .account-container main {
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.type-1054 .account-container .simple-input {
+  border: 0;
+  font-size: 1.3rem;
+  display: block;
+  width: 100%;
+  padding: 20px 0 0 20px;
+}
+.type-1054 .account-container .submit-button {
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 2px;
+  padding: 16px 0;
+  margin-top: 14px;
+  transition: .15s ease-out;
+  border: none;
+}
+.type-1054 .account-container .submit-button.black {
+  background: #292F34;
+}
+.type-1054 .account-container .submit-button.black:hover {
+  background: #22272b;
+}
+.type-1054 hr {
+  height: 1px;
+  color: #DFDFDF;
+  margin-bottom: 0;
+}
+.type-1054 .extra-login-options {
+  margin-top: 26px;
+}
+.type-1054 .extra-login-options a {
+  color: #fff;
+  transition: .15s ease-out;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.type-1054 .extra-login-options a:hover,
+.type-1054 .extra-login-options label:hover {
+  color: #e6e6e6;
+}
+.type-1054 .extra-login-options label {
+  color: #fff;
+  transition: .15s ease-out;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.type-1054 input:focus {
+  outline: none;
+}
+.type-1054 .pull-right {
+  float: right;
+}
+.type-1054 .checkbox {
+  vertical-align: -1px;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+.type-1054 .checkbox label {
+  position: relative;
+}
+.type-1054 .checkbox input {
+  display: none;
+  -webkit-appearance: none;
+}
+.type-1054 .checkbox.white label {
+  border-color: #fff;
+}
+.type-1054 .checkbox label {
+  border: 1px solid;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 1px;
+  background: 0 0;
+  left: 1px;
+  top: 1px;
+}
+.type-1054 .checkbox.white input:checked+.box:after {
+  background: #fff;
+}
+.type-1054 .checkbox label.box:after {
+  content: "";
+  transition: background-color .2s ease;
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-radius: 1px;
+  width: 10px;
+  height: 10px;
+}
+@media (min-width: 768px) {
+  .type-1054 .top-links a {
+    margin-left: 22px;
+  }
+  .type-1054 .logo {
+    margin-top: 100px;
+  }
+  .type-1054 .ember-view {
+    margin-left: 76px;
+  }
+}
+@media (min-width: 481) {
+  .type-1054 .top-links a {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .type-1054 .logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .type-1054 .top-links {
+    position: absolute;
+    right: 2px;
+    text-align: center;
+  }
+  .type-1054 .btn-top-links {
+    margin: 5px 38px;
+  }
+  .type-1054 .account-container {
+    width: 100%;
+  }
+  .type-1054 .extra-login-options label {
+    font-size: 1.2rem;
+  }
+  .type-1054 .extra-login-options a {
+    font-size: 1.2rem;
+  }
+  .type-1054 .row {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

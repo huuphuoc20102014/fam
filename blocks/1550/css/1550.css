@@ -55,6 +55,9 @@
 .type-1550 .admin-panel .admin-content .product-img img#main {
   max-width: 100%;
 }
+.type-1550 .admin-panel .admin-content .product-img a img {
+  width: 100%;
+}
 .type-1550 .admin-panel .admin-content .product-gallery {
   padding: 12px;
 }
@@ -106,25 +109,6 @@
 .type-1550 .admin-panel .admin-content .product-info .product-btnadd .add-to-cart:hover {
   background-color: #e6e6e6;
   border-color: #adadad;
-}
-.type-1550 .admin-panel .admin-content ul.nav-tabs li {
-  color: #333 !important;
-  background-color: #F5F7FA;
-  border-bottom: none;
-  border-radius: 4px 4px 0 0;
-}
-.type-1550 .admin-panel .admin-content ul.nav-tabs li a {
-  color: #5A738E;
-}
-.type-1550 .admin-panel .admin-content .tab-content {
-  padding: 10px 0;
-}
-.type-1550 .admin-panel .admin-content .tab-content #menu1,
-.type-1550 .admin-panel .admin-content .tab-content #menu2 {
-  padding: 0;
-}
-.type-1550 .admin-panel .admin-content .tab-content .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 100%;
 }
 @media (max-width: 1200px) {
   .tabs li {
