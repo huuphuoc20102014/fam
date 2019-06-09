@@ -34,38 +34,30 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <link href="<?php echo $url_path ?>/blocks/1525/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-  <link href="<?php echo $url_path ?>/blocks/1550/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="<?php echo $url_path ?>/blocks/1550/css/font-awesome.min.css" rel="stylesheet">
-  <link href="<?php echo $url_path ?>/blocks/1550/css/swiper.min.css" rel="stylesheet">
 
   <!-- File css  -->
   <link href="<?php echo $url_path ?>/blocks/1520/css/1520.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/1525.css" rel="stylesheet" type="text/css" />
-  <link href="<?php echo $url_path ?>/blocks/1538/css/1538.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo $url_path ?>/blocks/1550/css/1550.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1529/css/1529.css" rel="stylesheet" type="text/css" />
 
   <!-- Library javascript  -->
   <script src="<?php echo $url_path ?>/blocks/1525/js/jquery-1.12.4.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/bootstrap.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/swiper.min.js"></script>
-  <script src="<?php echo $url_path ?>/blocks/1550/js/jquery-3.4.0.js"></script>
-  <script src="<?php echo $url_path ?>/blocks/1550/js/bootstrap.min.js"></script>
-  <script src="<?php echo $url_path ?>/blocks/1550/js/swiper.min.js"></script>
+
   <!-- File js  -->
   <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
-  <script src="<?php echo $url_path ?>/blocks/1550/js/1550.js"></script>
+
   
 </head>
 
-<body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0;">
+<body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0; ">
   <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
   <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
-  <div class="container">
-    <div class="detail" style="background: #fff;padding-top: 60px;margin-top: -21px;">
-      <?php include $dir_block . '/blocks/1550/1550-content.php'; ?>
-    </div>
+  <div class="view-detail" style="margin-bottom: -11px;">
+    <?php include $dir_block . '/blocks/1550/1550-content.php'; ?>
   </div>
-  
   <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
 </body>
 </html>

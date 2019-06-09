@@ -141,9 +141,9 @@ if (isset($_GET['id'])) {
 											<td><?php echo $products['category_blog_id']; ?></td>
 											<td><?php echo $products['blog_bangtin']; ?></td>
 											<td>
-												<a href="form.html" class="btn btn-success btn-mini">Edit</a>
+												<a href="admin-edit-blog.php?id=<?php echo $products['blog_id'];?>" class="btn btn-success btn-mini">Edit</a>
 
-												<a href="../fam/admin-blog.php?id=<?php echo $products['blog_id'] ?>" class="btn btn-danger btn-mini">Delete</a>
+												<a href="../fam/admin-blog.php?id=<?php echo $products['blog_id'];?>" class="btn btn-danger btn-mini">Delete</a>
 											</td>
 										</tr>
 									</tbody>

@@ -1,22 +1,40 @@
-<?php
-include './products-blog.php';
 
-$obj_products = new products();
-$id = '';
-$products = '';
-if (isset($_GET['id']))
-{
-	$id = $_GET['id'];
-	$products = $obj_products->findUser($id);
+
+<?php
+
+$conn = mysqli_connect("localhost", "root", "", "fam");
+if($conn) {
+	//if connection has been established display connected.
+	echo "connected";
 }
-$categori = $obj_products->getCategories();
+//if button with the name uploadfilesub has been clicked
+$id = $_GET['id'];
+if(isset($_POST['update'])) {
+	//declaring variables
+	$filename = $_FILES['blog_images']['name'];
+	$filetmpname = $_FILES['blog_images']['tmp_name'];
+	$blog_tieude = mysqli_real_escape_string($conn, $_POST['blog_tieude']);
+	$blog_bangtin = mysqli_real_escape_string($conn, $_POST['blog_bangtin']);
+	//$blog_tieude = mysqli_real_escape_string($conn, $_POST['blog_tieude']);
+	//folder where images will be uploaded
+	$folder = './images/';
+	//function for saving the uploaded images in a specific folder
+	move_uploaded_file($filetmpname, $folder.$filename);
+	//inserting image details (ie image name) in the database
+	$sql = "UPDATE `blog` SET `blog_images`,`blog_tieude`,`blog_bangtin`='$filename','$blog_tieude','$blog_bangtin' WHERE `blog_id` = $id";
+	$qry = mysqli_query($conn,  $sql);
+	if( $qry) {
+		echo "image update";
+	}
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Fam Admin update blog</title>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="public/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="public/css/bootstrap-responsive.min.css" />
 	<link rel="stylesheet" href="public/css/uniform.css" />
@@ -27,6 +45,13 @@ $categori = $obj_products->getCategories();
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<?php
+	//database connetion
+	$con=mysqli_connect("localhost","root","","fam");
+	$id=$_GET['id'];
+	$select=mysqli_query($con,"select * from blog where blog_id='$id'");
+	$products=mysqli_fetch_assoc($select);
+	?>
 	<!--Header-part-->
 	<div id="header">
 		<h1><a href="admin-blog.php">Trang Chủ</a></h1>
@@ -74,13 +99,10 @@ $categori = $obj_products->getCategories();
 
 	<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
 		<ul>
-			<li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+			<li><a href="admin-blog.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
 
 			<li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
 			<li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
-
-
-
 		</ul>
 	</div>
 
@@ -102,11 +124,11 @@ $categori = $obj_products->getCategories();
 						<div class="widget-content nopadding">
 
 							<!-- BEGIN USER FORM -->
-							<form action="#" method="post" action="admin-add-blog.php" class="form-horizontal" enctype="multipart/form-data">
+							<form action="#" method="POST" class="form-horizontal" enctype="multipart/form-data">
 								<div class="control-group">
 									<label class="control-label">Tiêu đề :</label>
 									<div class="controls">
-										<input type="text" class="span11" placeholder="Tiêu đề..." name="blog_tieude" value="<?php echo $products['blog_tieude'] ?>" /> *
+										<input type="text" class="span11" placeholder="Tiêu đề..." name="blog_tieude" value="<?=$products['blog_tieude'];?>" /> *
 									</div>
 								</div>
 							<!-- <div class="control-group">
@@ -129,6 +151,9 @@ $categori = $obj_products->getCategories();
 										<option value="2">Video</option>
 									</select> *
 								</div>
+								<div class="view-img" style="text-align: center;">
+									<img src="images/<?php echo $products['blog_images'];?>" style="width: 100px;" alt="image-sp">
+								</div>
 								<div class="control-group">
 									<label class="control-label">Chọn file :</label>
 									<div class="controls">
@@ -138,21 +163,45 @@ $categori = $obj_products->getCategories();
 								<div class="control-group">
 									<label class="control-label"  >Bảng tin: </label>
 									<div class="controls">
-										<textarea class="span11" placeholder="Bảng tin..." name = "blog_bangtin"></textarea>
-									</div>
-									<!-- <div class="control-group">
-										<label class="control-label">Price :</label>
-										<div class="controls">
-											<input type="text" class="span11" placeholder="price" name = "price" /> *
-										</div>
+										<!-- <textarea type="text" class="span11" placeholder="Bảng tin..." name = "blog_bangtin" value="<?=$products['blog_bangtin'];?>"></textarea> -->
 
-									</div> -->
+										<input type="text" class="span11" placeholder="Bảng tin..." name="blog_bangtin" value="<?=$products['blog_bangtin'];?>" /> *
+									</div>
 									<div class="form-actions">
-										<button type="submit" name="upload" value="Upload" class="btn btn-success">Sửa đổi</button>
+										<!-- <button type="submit" name="update" value="update" class="btn btn-success">Sửa đổi</button> -->
+										<input type="submit" name="update" value="update">
 									</div>
 								</div>
 							</form>
 							<!-- END USER FORM -->
+							<?php
+							// if(isset($_POST['update'])){
+							// 	$blog_tieude=$_POST['blog_tieude'];
+							// 	if(isset($_FILES['blog_images']['blog_tieude']) && ($_FILES['blog_images']['blog_tieude']!="")){
+							// 		$size=$_FILES['blog_images']['size'];
+							// 		$temp=$_FILES['blog_images']['tmp_name'];
+							// 		$type=$_FILES['blog_images']['type'];
+							// 		$txt_tieude=$_FILES['blog_images']['name'];
+							// 		//$txt_bangtin=$_FILES['blog_images']['blog_bangtin'];
+							// 		//1st delete old file from folder
+							// 		unlink("./images/$old_image");
+							// 		//new image upload to folder
+							// 		move_uploaded_file($temp,"./images/$txt_tieude");
+							// 	}
+							// 	else{
+							// 		$txt_tieude=$old_image;
+							// 	}
+							// 	$update=mysqli_query(con,"update blog set blog_tieude='$blog_tieude',blog_images='$txt_tieude'");
+							// 	if($update){
+							// 		echo"<script>alert('data update successfuly!')</script>";
+							// 		echo"<script>window.open('admin-blog.php','_self')</script>";
+							// 	}
+							// 	else{
+							// 		echo"<script>alert('updation failed!')</script>";
+							// 		echo"<script>window.open('admin-blog.php','_self')</script>";
+							// 	}
+							// }
+							?>
 						</div>
 					</div>
 				</div>
@@ -160,13 +209,6 @@ $categori = $obj_products->getCategories();
 		</div>
 	</div>
 	<!-- END CONTENT -->
-	<?php
-		if(isset($_GET['blog_tieude'])){
-			$data = ['blog_tieude' => $_GET['blog_tieude']];
-			$obj_products->updateUser($data);
-
-		}
-	?>
 	<!--Footer-part-->
 	<div class="row-fluid">
 		<div id="footer" class="span12"> 2019 &copy; Web Fam</div>

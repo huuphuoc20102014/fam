@@ -8,11 +8,11 @@ class products extends db {
     }
     public function addnew($data) {
         $sql = 'INSERT INTO blog(blog_videos, uploadfile, blog_tieude, blog_bangtin, category_blog_id)' . 'VALUES ("'
-                . $data['blog_videos'] . '","'
-                . $data['blog_images'] . '","'
-                . $data['blog_tieude'] . '","'
-                . $data['blog_bangtin'] . '","'
-                . $data['category_blog_id'] . '")';
+        . $data['blog_videos'] . '","'
+        . $data['blog_images'] . '","'
+        . $data['blog_tieude'] . '","'
+        . $data['blog_bangtin'] . '","'
+        . $data['category_blog_id'] . '")';
         $this->query($sql);
     }
     public function Delete($id) {
@@ -29,14 +29,18 @@ class products extends db {
         $product = $this->select($sql);
         return $product[0];
     }
-    public function updateUser($data) {
-        
+    public function updateBlog($data) {
+
         $sql = 'UPDATE `blog` ' .
-                'SET `blog_images` = "' . $data['blog_images'] . '", '.
-                    '`blog_tieude` = "' . $data['blog_tieude'] . '", '.
-                    '`blog_bangtin` = "' . $data['blog_bangtin'] . '"'.
-                    '`category_blog_id` = "' . $data['category_blog_id'] . '"'.
-                'WHERE `blog_id=`' . $data['blog_id'];
+        'SET `blog_images` = "' . $data['blog_images'] . '", '.
+        'WHERE `blog_id=`' . $data['blog_id'];
+        $this->query($sql);
+    }
+
+    public function updateUser($data) {
+        $sql = 'UPDATE `blog` ' .
+        'SET `blog_tieude` = "' . $data['blog_tieude'] . '"' .
+        'WHERE blog_id=' . $data['id'];
         $this->query($sql);
     }
     public function getAll() {

@@ -8,10 +8,10 @@ class products extends db {
     }
     public function addnew($data) {
         $sql = 'INSERT INTO fam(product-name, product-price, product-category-id, product-image)' . 'VALUES ("'
-                . $data['product-name'] . '","'
-                . $data['product-price'] . '","'
-                . $data['product-product-category-id'] . '","'
-                . $data['product-image'] . '")';
+        . $data['product-name'] . '","'
+        . $data['product-price'] . '","'
+        . $data['product-product-category-id'] . '","'
+        . $data['product-image'] . '")';
         $this->query($sql);
     }
     public function Delete($id) {
@@ -31,11 +31,11 @@ class products extends db {
     public function updateUser($data) {
         
         $sql = 'UPDATE `fam` ' .
-                'SET `product-name` = "' . $data['product-name'] . '", ' .
-                    '`product-category-id` = "' . $data['product-category-id'] . '", '.
-                    '`product-image` = "' . $data['product-image'] . '", '.
-                    '`product-price` = "' . $data['product-price'] . '"'.
-                'WHERE `product-id=`' . $data['product-id'];
+        'SET `product-name` = "' . $data['product-name'] . '", ' .
+        '`product-category-id` = "' . $data['product-category-id'] . '", '.
+        '`product-image` = "' . $data['product-image'] . '", '.
+        '`product-price` = "' . $data['product-price'] . '"'.
+        'WHERE `product-id=`' . $data['product-id'];
         $this->query($sql);
     }
     public function getAll() {
