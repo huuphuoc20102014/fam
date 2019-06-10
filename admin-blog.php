@@ -143,12 +143,15 @@ if (isset($_GET['id'])) {
 											<td>
 												<a href="admin-edit-blog.php?id=<?php echo $products['blog_id'];?>" class="btn btn-success btn-mini">Edit</a>
 
-												<a href="../fam/admin-blog.php?id=<?php echo $products['blog_id'];?>" class="btn btn-danger btn-mini">Delete</a>
+												<a href="admin-blog.php?id=<?php echo $products['blog_id'];?>" class="btn btn-danger btn-mini">Delete</a>
 											</td>
 										</tr>
 									</tbody>
 								<?php endforeach; ?>
 							</table>
+							<div class="form-actions">
+								<button type="admin-blog.php" class="btn btn-success"><a style="color: #fff;" href="admin-blog.php">Update</a></button>
+							</div>
 							<ul class="pagination">
 								<li class="active"><a href="">1</a></li>
 								<li><a href="">2</a></li>

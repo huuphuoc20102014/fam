@@ -96,7 +96,7 @@ if(isset($_POST['update'])) {
 
 	<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
 		<ul>
-			<li><a href="admin-blog.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+			<li><a href="admin-blog.php"><i class="icon icon-home"></i> <span>Dashboard Blog</span></a> </li>
 
 			<li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
 			<li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
