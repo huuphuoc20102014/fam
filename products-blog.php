@@ -29,22 +29,22 @@ class products extends db {
         $product = $this->select($sql);
         return $product[0];
     }
-    public function updateBlog($data) {
+    // public function updateBlog($data) {
 
-        $sql = 'UPDATE `blog` ' .
-        'SET `blog_images` = "' . $data['blog_images'] . '", '.
-        'WHERE `blog_id=`' . $data['blog_id'];
-        $this->query($sql);
-    }
+    //     $sql = 'UPDATE `blog` ' .
+    //     'SET `blog_images` = "' . $data['blog_images'] . '", '.
+    //     'WHERE `blog_id=`' . $data['blog_id'];
+    //     $this->query($sql);
+    // }
 
-    public function updateUser($data) {
-        $sql = 'UPDATE `blog` ' .
-        'SET `blog_tieude` = "' . $data['blog_tieude'] . '"' .
-        'WHERE blog_id=' . $data['id'];
-        $this->query($sql);
-    }
+    // public function updateUser($data) {
+    //     $sql = 'UPDATE `blog` ' .
+    //     'SET `blog_tieude` = "' . $data['blog_tieude'] . '"' .
+    //     'WHERE blog_id=' . $data['id'];
+    //     $this->query($sql);
+    // }
     public function getAll() {
-        $sql = 'SELECT * FROM blog';
+        $sql = 'SELECT * FROM `blog`';
         $product = $this->select($sql);
         return $product;
     }

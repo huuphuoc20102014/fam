@@ -1,7 +1,4 @@
-
-
 <?php
-
 $conn = mysqli_connect("localhost", "root", "", "fam");
 if($conn) {
 	//if connection has been established display connected.
@@ -21,7 +18,7 @@ if(isset($_POST['update'])) {
 	//function for saving the uploaded images in a specific folder
 	move_uploaded_file($filetmpname, $folder.$filename);
 	//inserting image details (ie image name) in the database
-	$sql = "UPDATE `blog` SET `blog_images`,`blog_tieude`,`blog_bangtin`='$filename','$blog_tieude','$blog_bangtin' WHERE `blog_id` = $id";
+	$sql = "UPDATE `blog` SET `blog_images`='$filename', `blog_tieude` = '$blog_tieude', `blog_bangtin` = '$blog_bangtin' WHERE `blog_id` = $id";
 	$qry = mysqli_query($conn,  $sql);
 	if( $qry) {
 		echo "image update";
@@ -47,9 +44,9 @@ if(isset($_POST['update'])) {
 <body>
 	<?php
 	//database connetion
-	$con=mysqli_connect("localhost","root","","fam");
-	$id=$_GET['id'];
-	$select=mysqli_query($con,"select * from blog where blog_id='$id'");
+	//$con=mysqli_connect("localhost","root","","fam");
+	//$id=$_GET['id'];
+	$select=mysqli_query($conn,"select * from blog where blog_id='$id'");
 	$products=mysqli_fetch_assoc($select);
 	?>
 	<!--Header-part-->
