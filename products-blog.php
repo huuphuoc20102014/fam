@@ -54,8 +54,8 @@ class products extends db {
         return $product;
     }
     public function getPage($p) {
-        $n = ($p - 1) * 12;
-        $sql = 'SELECT * FROM blog LIMIT ' . $n . ',12';
+        $n = ($p - 1) * 2;
+        $sql = 'SELECT * FROM blog LIMIT ' . $n . ',2';
         $product = $this->select($sql);
         return $product;
     }

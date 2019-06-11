@@ -90,7 +90,7 @@ if (isset($_GET['id'])) {
 
 	<!--start-top-serch-->
 	<div id="search">
-		<form action="result.html" method="get">
+		<form action="#" method="get" role="form">
 			<input type="text" placeholder="Search here..." name="keyword"/>
 			<button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 		</form>
@@ -156,7 +156,7 @@ if (isset($_GET['id'])) {
 								<li class="active"><a href="">1</a></li>
 								<li><a href="">2</a></li>
 								<li><a href="">3</a></li>
-							</ul>	
+							</ul>
 						</div>
 					</div>
 				</div>
