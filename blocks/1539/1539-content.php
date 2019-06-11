@@ -26,8 +26,8 @@ if (isset($_GET['keyword'])) {
 $product = $obj_products->getProducts($keyword);
 //Hàm Delete
 $id = '';
-if (isset($_GET['product-id'])) {
-    $id = $_GET['product-id'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
     $obj_products->deleteProducts($id);
 }
 ?>
@@ -54,7 +54,7 @@ if (isset($_GET['product-id'])) {
                         <div class="item">
                             <div class="thumb">
 
-                                <img src="<?php echo 'images/' . $products['product-images']; ?>" alt="#"  class="img-responsive">
+                                <img src="<?php echo 'images/' . $products['product_images']; ?>" alt="#"  class="img-responsive">
                                 <div class="overlay">
                                     <a class="text1" href="#">
                                         <img src="http://<?php echo $url_path ?>/images/basket_hover.png" alt="#">
@@ -76,12 +76,12 @@ if (isset($_GET['product-id'])) {
                                 <i class="fa fa-star" style="color:#FF6F24"></i>
                             </div>
                             <h6 class="entry-title">
-                                 <a href="#"><?php echo $products['product-name']; ?></a>
+                                 <a href="#"><?php echo $products['product_name']; ?></a>
                             </h6>
                             <div class="price">
                                 <span>
                                     <span>$</span>
-                                    <?php echo number_format($products['product-price'], 0, ',', '.'); ?> ₫
+                                    <?php echo number_format($products['product_price'], 0, ',', '.'); ?> ₫
                                 </span>
                             </div>
                         </div>

@@ -1,16 +1,21 @@
 <?php
 include './products.php';
+//Hiển thị
 $obj_products = new products();
-$id = '';
-$product = '';
+$product = $obj_products->getAll();
+$dem = 1;
+//Tìm kiếm
+$keyword = '';
+if (isset($_GET['keyword'])) {
+    $keyword = $_GET['keyword'];
+}
+$products = $obj_products->getProducts($keyword);
+//Hàm Delete
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $products = $obj_products->findUser($id);
-    
+
+    $obj_products->Delete($id);
 }
-//else {
-//    die('error');
-//}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +29,23 @@ if (isset($_GET['id'])) {
         <link rel="stylesheet" href="public/css/select2.css" />
         <link rel="stylesheet" href="public/css/matrix-style.css" />
         <link rel="stylesheet" href="public/css/matrix-media.css" />
-        <link href="../public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="public/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            ul.pagination{
+                list-style: none;
+                float: right;
+            }
+            ul.pagination li.active{
+                font-weight: bold
+            }
+            ul.pagination li{
+                float: left;
+                display: inline-block;
+                padding: 10px
+            }
+
+        </style>
     </head>
     <body>
 
@@ -76,99 +96,72 @@ if (isset($_GET['id'])) {
 
         <div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
             <ul>
-                <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+                <li><a href="admin-home.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
 
                 <li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
                 <li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
-
-
-
             </ul>
         </div>
-
         <!-- BEGIN CONTENT -->
         <div id="content">
             <div id="content-header">
-                <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Home</a></div>
-                <h1>Add New Product</h1>
+                <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Home</a></div>
+                <h1>Manage Products</h1>
             </div>
             <div class="container-fluid">
                 <hr>
                 <div class="row-fluid">
                     <div class="span12">
                         <div class="widget-box">
-                            <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                                <h5>Product Detail</h5>
+                            <div class="widget-title"> <span class="icon"><a href="admin-add-home.php"> <i class="icon-plus"></i> </a></span>
+                                <h5>Products</h5>
                             </div>
                             <div class="widget-content nopadding">
+                                <table  class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Loại sản phẩm</th>
+                                            <th>Giá</th>
+                                            <th>Mô tả</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($products as $key => $product): ?>
+                                            <tr class="">
+                                                <td>
+                                                    <img src="<?php echo 'images/' . $product['product_images']; ?>" alt="#"  class="img-responsive" width="10%">
+                                                </td>
+                                                <td><?php echo $product['product_name']; ?></td>
+                                                <td><?php echo $product['category_id']; ?></td>
+                                                <td><?php echo number_format($product['product_price'], 0, ',', '.'); ?> ₫</td>
+                                                <td><?php echo $product['mota']; ?></td>
+                                                <td>
+                                                    <a href="admin-edit-home.php?id=<?php echo $product['id'] ?>" class="btn btn-success btn-mini">Edit</a>
 
-                                <!-- BEGIN USER FORM -->
-                                <form action="admin_page.php" method="post" class="form-horizontal" enctype="multipart/form-data">
-                                    <div class="control-group">
-                                        <label class="control-label">Name :</label>
-                                        <div class="controls">
-                                            <input type="text" class="span11" placeholder="Product name" name="name" /> *
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label">Choose a product type :</label>
-                                        <div class="controls">
-                                            <select name="type_id">
-                                                <option value="4">Speaker</option>
-                                                <option value="3">Laptop</option>
-                                                <option value="2">Tablet</option>
-                                                <option value="1">Cellphone</option>
+                                                    <a href="admin-home.php?id=<?php echo $product['id'] ?>" class="btn btn-danger btn-mini">Delete</a>
 
-                                            </select> *
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label">Choose a manufacture :</label>
-                                        <div class="controls">
-                                            <select name="manu_id">
-                                                <option value="5">Oppo</option>
-                                                <option value="4">SamSung</option>
-                                                <option value="3">Sony</option>
-                                                <option value="2">Microsoft</option>
-                                                <option value="1">Apple</option>
 
-                                            </select> *
-                                        </div>
-                                        <div class="control-group">
-                                            <label class="control-label">Choose an image :</label>
-                                            <div class="controls">
-                                                <input type="file" name="fileUpload" id="fileUpload">
-                                            </div>
-                                        </div>
-                                        <div class="control-group">
-                                            <label class="control-label"  >Description</label>
-                                            <div class="controls">
-                                                <textarea class="span11" placeholder="Description" name = "description"></textarea>
-                                            </div>
-                                            <div class="control-group">
-                                                <label class="control-label">Price :</label>
-                                                <div class="controls">
-                                                    <input type="text" class="span11" placeholder="price" name = "price" /> *
-                                                </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination">
+                                    <li class="active"><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                </ul>
 
-                                            </div>
-
-                                            <div class="form-actions">
-                                                <button type="submit" class="btn btn-success">Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END USER FORM -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- END CONTENT -->
-
         <!--Footer-part-->
         <div class="row-fluid">
             <div id="footer" class="span12"> 2017 &copy; TDC - Lập trình web 1</div>
@@ -184,11 +177,4 @@ if (isset($_GET['id'])) {
         <script src="public/js/matrix.tables.js"></script>
     </body>
 </html>
-<?php
-if (isset($_GET['product_name'])) {
-    $data = [
-    'product_name' => $_GET['product_name']    
-     ];
-    $obj_products->updateUser($data);
-}
-?>
+

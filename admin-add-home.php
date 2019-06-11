@@ -1,37 +1,37 @@
 <?php
+//This code shows how to Upload And Insert Image Into Mysql Database Using Php Html.
+//connecting to uploadFile database.
 $conn = mysqli_connect("localhost", "root", "", "fam");
 if($conn) {
 	//if connection has been established display connected.
 	echo "connected";
 }
 //if button with the name uploadfilesub has been clicked
-$id = $_GET['id'];
-if(isset($_POST['update'])) {
+if(isset($_POST['upload'])) {
 	//declaring variables
-	$filename = $_FILES['blog_images']['name'];
-	$filetmpname = $_FILES['blog_images']['tmp_name'];
-	$blog_tieude = mysqli_real_escape_string($conn, $_POST['blog_tieude']);
-	$blog_bangtin = mysqli_real_escape_string($conn, $_POST['blog_bangtin']);
-	//$blog_tieude = mysqli_real_escape_string($conn, $_POST['blog_tieude']);
+	$filename = $_FILES['uploadfile']['name'];
+	$filetmpname = $_FILES['uploadfile']['tmp_name'];
+	$product_name = mysqli_real_escape_string($conn, $_POST['product_name']);
+	$product_price = mysqli_real_escape_string($conn, $_POST['product_price']);
+	$mota = mysqli_real_escape_string($conn, $_POST['mota']);
 	//folder where images will be uploaded
 	$folder = './images/';
 	//function for saving the uploaded images in a specific folder
 	move_uploaded_file($filetmpname, $folder.$filename);
 	//inserting image details (ie image name) in the database
-	$sql = "UPDATE `blog` SET `blog_images`='$filename', `blog_tieude` = '$blog_tieude', `blog_bangtin` = '$blog_bangtin' WHERE `blog_id` = $id";
+	$sql = "INSERT INTO `fam` (`product_images`, `product_name`, `product_price`, `mota`)  VALUES ('$filename', '$product_name', '$product_price', 'mota')";
 	$qry = mysqli_query($conn,  $sql);
 	if( $qry) {
-		echo "image update";
+		echo "image uploaded";
 	}
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Fam Admin update blog</title>
+	<title>Fam Admin</title>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="public/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="public/css/bootstrap-responsive.min.css" />
 	<link rel="stylesheet" href="public/css/uniform.css" />
@@ -42,13 +42,7 @@ if(isset($_POST['update'])) {
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<?php
-	//database connetion
-	//$con=mysqli_connect("localhost","root","","fam");
-	//$id=$_GET['id'];
-	$select=mysqli_query($conn,"select * from blog where blog_id='$id'");
-	$products=mysqli_fetch_assoc($select);
-	?>
+
 	<!--Header-part-->
 	<div id="header">
 		<h1><a href="admin-blog.php">Trang Chủ</a></h1>
@@ -96,10 +90,12 @@ if(isset($_POST['update'])) {
 
 	<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
 		<ul>
-			<li><a href="admin-blog.php"><i class="icon icon-home"></i> <span>Dashboard Blog</span></a> </li>
-
+			<li><a href="admin-home.php"><i class="icon icon-home"></i> <span>Dashboard Home</span></a> </li>
 			<li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
 			<li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
+
+
+
 		</ul>
 	</div>
 
@@ -108,7 +104,7 @@ if(isset($_POST['update'])) {
 
 		<div id="content-header">
 			<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Add blog</a></div>
-			<h1>Update Blog</h1>
+			<h1>Add New Blog</h1>
 		</div>
 		<div class="container-fluid">
 			<hr>
@@ -121,50 +117,55 @@ if(isset($_POST['update'])) {
 						<div class="widget-content nopadding">
 
 							<!-- BEGIN USER FORM -->
-							<form action="#" method="POST" class="form-horizontal" enctype="multipart/form-data">
+							<form action="#" method="post" class="form-horizontal" enctype="multipart/form-data">
 								<div class="control-group">
 									<label class="control-label">Tiêu đề :</label>
 									<div class="controls">
-										<input type="text" class="span11" placeholder="Tiêu đề..." name="blog_tieude" value="<?=$products['blog_tieude'];?>" /> *
+										<input type="text" class="span11" placeholder="Tiêu đề..." name="product_name" /> *
 									</div>
 								</div>
 								<div class="control-group">
 									<label class="control-label">Loại file :</label>
 									<div class="controls">
 										<select name="category_blog_id">
-											<option value="1">Image</option>
-											<option value="2">Video</option>
+											<option value="1">Rau</option>
+											<option value="2">Củ</option>
+											<option value="3">Quả</option>
+											<option value="4">Hạt</option>
 										</select> *
-									</div>
-									<div class="view-img" style="text-align: center;">
-										<img src="images/<?php echo $products['blog_images'];?>" style="width: 100px;" alt="image-sp">
 									</div>
 									<div class="control-group">
 										<label class="control-label">Chọn file :</label>
 										<div class="controls">
-											<input type="file" name="blog_images" id="fileUpload">
+											<input type="file" name="uploadfile" id="fileUpload">
 										</div>
 									</div>
 									<div class="control-group">
-										<label class="control-label"  >Bảng tin: </label>
+										<label class="control-label">Giá bán :</label>
 										<div class="controls">
-											<!-- <textarea type="text" class="span11" placeholder="Bảng tin..." name = "blog_bangtin" value="<?=$products['blog_bangtin'];?>"></textarea> -->
-
-											<input type="text" class="span11" placeholder="Bảng tin..." name="blog_bangtin" value="<?=$products['blog_bangtin'];?>" /> *
-										</div>
-										<div class="form-actions">
-											<!-- <button type="submit" name="update" value="update" class="btn btn-success">Sửa đổi</button> -->
-											<input type="submit" name="update" value="update">
+											<input type="text" class="span11" placeholder="price" name = "product_price" /> *
 										</div>
 									</div>
+									<div class="control-group">
+										<label class="control-label">Mô tả :</label>
+										<div class="controls">
+											<input type="text" class="span11" placeholder="price" name = "mota" /> *
+										</div>
+									</div>
+									<div class="form-actions">
+										<button type="submit" name="upload" value="Upload" class="btn btn-success">Add</button>
+									</div>
 								</form>
+								<!-- END USER FORM -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- END CONTENT -->
+
 		<!--Footer-part-->
 		<div class="row-fluid">
 			<div id="footer" class="span12"> 2019 &copy; Web Fam</div>
