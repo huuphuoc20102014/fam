@@ -85,7 +85,7 @@ if (isset($_GET['id'])) {
                         </div>
                     </div>
                     <?php
-                    if ($dem == 12) {
+                    if ($dem == 13) {
                         break;
                     }
                     ?>
