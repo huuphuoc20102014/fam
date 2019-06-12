@@ -16,7 +16,7 @@ if (isset($_POST['btnLogin'])) {
     $password = $_POST['password'];
     if (Admin::login($adminname, $password)) {
 
-        header("Location: admin-blog.php");
+        header("Location: admin-home.php");
     } else {
         header("Location: login.php");
         echo "<script>alert('Đăng nhập thất bại')</script>";

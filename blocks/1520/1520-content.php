@@ -15,7 +15,7 @@ $url_path = str_replace('\\', '/', $url_path);
                     <a class="view-facebook" href="https://www.facebook.com/saketran1987">
                         <i class="fa fa-facebook-f"></i>
                     </a>
-                    <a class="view-zalo" href="http://zaloapp.com/qr/p/esnnrho4ljtc">   
+                    <a class="view-zalo" href="https://zalo.me/0902903199">   
                         <img src="<?php echo $url_path ?>/image/zalo.jpg" alt="zalo" class="img-responsive">
                     </a>
                 </div>

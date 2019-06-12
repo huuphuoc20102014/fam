@@ -5,8 +5,6 @@ $pattern_uri = '/' . $pattern_document_root . '(.*)$/';
 preg_match_all($pattern_uri, __DIR__, $matches);
 $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
-
-
 //code details php
 include './products.php';
 //Hiển thị
@@ -18,7 +16,6 @@ $obj_products = new products();
 // }
 $products = $obj_products->getProductsById($_GET['id']);
 ?>
-
 <div class="type-1550">
     <div class="container">
         <div class="row">
@@ -74,7 +71,7 @@ $products = $obj_products->getProductsById($_GET['id']);
                                         <?php echo $products[0]['mota']; ?>
                                     </p>
                                     <div class="product-price">
-                                        <h1 class="price"><?php echo $products[0]['product_price']; ?>VNĐ</h1>
+                                        <h1 class="price"><?php echo $products[0]['product_price']; ?> VNĐ/KG</h1>
                                         <!-- <span class="price-tax">45.000 ₫-33%</span> -->
                                     </div>
                                     <br>

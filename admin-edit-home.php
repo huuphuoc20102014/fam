@@ -97,8 +97,7 @@ if(isset($_POST['update'])) {
         <ul>
             <li><a href="admin-home.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
 
-            <li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
-            <li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
+            <li> <a href="admin-edit-home.php"><i class="icon icon-th-list"></i> <span>Page Edit</span></a></li>
 
 
 

@@ -56,10 +56,10 @@ if (isset($_GET['id'])) {
 
                                 <img src="<?php echo 'images/' . $products['product_images']; ?>" alt="#"  class="img-responsive">
                                 <div class="overlay">
-                                    <a class="text1" href="#">
+                                    <!-- <a class="text1" href="#">
                                         <img src="http://<?php echo $url_path ?>/images/basket_hover.png" alt="#">
                                         <span>TO CART</span>
-                                    </a>
+                                    </a> -->
                                     <a class="text2" href="details.php?id=<?php echo $products['id'] ?>">
                                         <img src="http://<?php echo $url_path ?>/images/details_hover.png" alt="#" >
                                         <span>DETAILS</span>

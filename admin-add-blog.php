@@ -92,8 +92,7 @@ if(isset($_POST['upload'])) {
 		<ul>
 			<li><a href="admin-blog.php"><i class="icon icon-home"></i> <span>Dashboard Blog</span></a> </li>
 
-			<li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
-			<li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
+			<li> <a href="admin-add-blog.php"><i class="icon icon-th-list"></i> <span>Page Blog</span></a></li>
 
 
 

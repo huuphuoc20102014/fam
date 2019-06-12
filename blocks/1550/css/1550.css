@@ -74,8 +74,14 @@
 .type-1550 .admin-panel .admin-content .product-name {
   border-bottom: 1px solid #e0e0e0;
 }
+.type-1550 .admin-panel .admin-content .product-name h3 a {
+  color: #61200C;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .type-1550 .admin-panel .admin-content .product-info p.description {
   padding: 25px 0;
+  text-transform: capitalize;
 }
 .type-1550 .admin-panel .admin-content .product-info .product-price {
   margin-top: 50px;
@@ -95,20 +101,19 @@
 .type-1550 .admin-panel .admin-content .product-info .product-btnadd {
   margin-top: 25px;
 }
-.type-1550 .admin-panel .admin-content .product-info .product-btnadd .add-to-cart {
-  margin-bottom: 5px;
-  margin-right: 5px;
-  color: #333;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  padding: 5px 12px;
-  border-radius: 5px;
-  font-size: 18px;
-  text-decoration: none;
+.type-1550 .admin-panel .admin-content .product-info .product-btnadd button.add_cart {
+  color: #61200c;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #FFC00A;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #61200c;
 }
-.type-1550 .admin-panel .admin-content .product-info .product-btnadd .add-to-cart:hover {
-  background-color: #e6e6e6;
-  border-color: #adadad;
+.type-1550 .admin-panel .admin-content .product-info .product-btnadd button.add_cart:hover {
+  background-color: #61200c;
+  border-color: #61200c;
+  color: #FFC00A;
 }
 @media (max-width: 1200px) {
   .tabs li {

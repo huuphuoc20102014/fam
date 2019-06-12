@@ -85,8 +85,8 @@ if (isset($_GET['id'])) {
 
         <!--start-top-serch-->
         <div id="search">
-            <form action="result.html" method="get">
-                <input type="text" placeholder="Search here..." name="key"/>
+            <form action="#" method="get" role="form">
+                <input type="text" placeholder="Search here..." name="keyword"/>
                 <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
             </form>
         </div>
@@ -96,10 +96,10 @@ if (isset($_GET['id'])) {
 
         <div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
             <ul>
-                <li><a href="admin-home.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+                <li><a href="index.php"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
 
-                <li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
-                <li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
+                <li> <a href="admin-home.php"><i class="icon icon-th-list"></i> <span>Page Home</span></a></li>
+                <li> <a href="admin-blog.php"><i class="icon icon-th-list"></i> <span>Page Blog</span></a></li>
             </ul>
         </div>
         <!-- BEGIN CONTENT -->

@@ -14,7 +14,9 @@ $url_path = str_replace('\\', '/', $url_path);
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="one_third">
                     <a href="#"><h3 class="fb-facebook">fanpage facebook sake tran</h3></a>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuylele24%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=459678921451900&autoLogAppEvents=1"></script>
+                    <div class="fb-page" data-href="https://www.facebook.com/shopraudalat" data-tabs="timeline" data-width="360" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/shopraudalat" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shopraudalat">Shopraudalat.com</a></blockquote></div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
@@ -59,13 +61,13 @@ $url_path = str_replace('\\', '/', $url_path);
                             <a href="#" target="_blank" rel="nofollow">0902.903.199</a>
                         </p>
                         <p>
-                           HOTLINE : 
-                           <a href="#" target="_blank" rel="nofollow">0707.804.416</a>
-                       </p>
-                   </div>
-               </div>
-               <br>
-               <div class="view-time">
+                         HOTLINE : 
+                         <a href="#" target="_blank" rel="nofollow">0707.804.416</a>
+                     </p>
+                 </div>
+             </div>
+             <br>
+             <div class="view-time">
                 <div class="view-years">
                     <div class="years">
                         <i class="fa fa-twitter"></i>
@@ -83,7 +85,7 @@ $url_path = str_replace('\\', '/', $url_path);
         <div class="row footer-row">
             <div class="col-md-8">
                 <div class="footer_inner">
-                    <span class="copyright">Powered and Designed by "H"-"P" Group Copyright © 2019 HP Group - All Rights Reserved</span>
+                    <span class="copyright">Powered and Designed by "H-P" Group Copyright © 2019 HP Group - All Rights Reserved</span>
                 </div>
             </div>
             <div class="col-md-3">

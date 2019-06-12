@@ -97,9 +97,7 @@ if(isset($_POST['update'])) {
 	<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
 		<ul>
 			<li><a href="admin-blog.php"><i class="icon icon-home"></i> <span>Dashboard Blog</span></a> </li>
-
-			<li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
-			<li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
+			<li> <a href="admin-edit-blog.php"><i class="icon icon-th-list"></i> <span>Page Edit</span></a></li>
 		</ul>
 	</div>
 
@@ -108,7 +106,7 @@ if(isset($_POST['update'])) {
 
 		<div id="content-header">
 			<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Add blog</a></div>
-			<h1>Update Blog</h1>
+			<h1>Edit Blog</h1>
 		</div>
 		<div class="container-fluid">
 			<hr>
@@ -154,7 +152,7 @@ if(isset($_POST['update'])) {
 										</div>
 										<div class="form-actions">
 											<!-- <button type="submit" name="update" value="update" class="btn btn-success">Sửa đổi</button> -->
-											<input type="submit" name="update" value="update">
+											<input type="submit" name="update" value="Edit">
 										</div>
 									</div>
 								</form>

@@ -16,10 +16,6 @@ $url_path = str_replace('\\', '/', $url_path);
                         <img src="<?php echo $url_path ?>/images/1.jpg" alt="#"  class="img-responsive">
 
                         <div class="overlay">
-                            <div class="text1">
-                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
-                                <p>TO CART</p>
-                            </div>
                             <div class="text2">
                                 <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
                                 <p>DETAILS</p>
@@ -50,10 +46,6 @@ $url_path = str_replace('\\', '/', $url_path);
                         <img src="<?php echo $url_path ?>/images/2.jpg" alt="#" class="img-responsive">
 
                         <div class="overlay">
-                            <div class="text1">
-                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
-                                <p>TO CART</p>
-                            </div>
                             <div class="text2">
                                 <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
                                 <p>DETAILS</p>
@@ -82,10 +74,6 @@ $url_path = str_replace('\\', '/', $url_path);
                         <img src="<?php echo $url_path ?>/images/3.jpg" alt="#" class="img-responsive">
 
                         <div class="overlay">
-                            <div class="text1">
-                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
-                                <p>TO CART</p>
-                            </div>
                             <div class="text2">
                                 <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
                                 <p>DETAILS</p>
@@ -112,10 +100,6 @@ $url_path = str_replace('\\', '/', $url_path);
                     <div class="thumb">
                         <img src="<?php echo $url_path ?>/images/4.jpg" alt="#" class="img-responsive">
                         <div class="overlay">
-                            <div class="text1">
-                                <img src="<?php echo $url_path ?>/images/basket_hover.png" alt="#" class="img-responsive">
-                                <p>TO CART</p>
-                            </div>
                             <div class="text2">
                                 <img src="<?php echo $url_path ?>/images/details_hover.png" alt="#" class="img-responsive">
                                 <p>DETAILS</p>

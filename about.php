@@ -56,22 +56,51 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
 
 <body style="background:#0b7104 url('blocks/background/background.png')repeat 50% 0;
 background-repeat: no-repeat;">
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.3'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="408153699781286"
+  theme_color="#0084ff"
+  logged_in_greeting="Shop rau sạch Đà Lạt kính chào quý khách!"
+  logged_out_greeting="Shop rau sạch Đà Lạt kính chào quý khách!">
+</div>
+</div>
+
 <div class="top-header">
-    <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
-    <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
+  <?php include $dir_block . '/blocks/1520/1520-content.php'; ?>
+  <?php include $dir_block . '/blocks/1525/1525-content.php'; ?>
 </div>
 <div class="body-blog">
-    <?php include $dir_block . '/blocks/1548/1548-content.php'; ?>
-    <div class="container">
-        <div class="text-view" style="background: #fff; padding-top: 1px; padding-bottom: 1px;">
-            <?php include $dir_block . '/blocks/1149/1149-content.php'; ?>
-            <?php include $dir_block . '/blocks/1547/1547-content.php'; ?>
-        </div>
+  <?php include $dir_block . '/blocks/1548/1548-content.php'; ?>
+  <div class="container">
+    <div class="text-view" style="background: #fff; padding-top: 1px; padding-bottom: 1px;">
+      <?php include $dir_block . '/blocks/1149/1149-content.php'; ?>
+      <?php include $dir_block . '/blocks/1547/1547-content.php'; ?>
     </div>
-    
+  </div>
+  
 </div>
 <div class="footer">
-    <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
+  <?php include $dir_block . '/blocks/1529/1529-content.php'; ?>
 </div>
 
 </body>

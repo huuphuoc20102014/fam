@@ -32,7 +32,7 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <title>details</title>
   <!-- Library css  -->
   <link href="<?php echo $url_path ?>/blocks/1525/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="<?php echo $url_path ?>/blocks/1550/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="<?php echo $url_path ?>/blocks/1550/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
   <link href="<?php echo $url_path ?>/blocks/1550/css/swiper.min.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo $url_path ?>/blocks/1525/css/swiper.min.css" rel="stylesheet" type="text/css"/>
   <link href="<?php echo $url_path ?>/blocks/1525/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -48,11 +48,11 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <script src="<?php echo $url_path ?>/blocks/1525/js/jquery.min.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1550/js/jquery-3.4.0.js"></script>
   <script src="<?php echo $url_path ?>/blocks/1525/js/bootstrap.min.js"></script>
-  <script src="<?php echo $url_path ?>/blocks/1550/js/bootstrap.min.js"></script>
+  <!-- <script src="<?php echo $url_path ?>/blocks/1550/js/bootstrap.min.js"></script> -->
   <script src="<?php echo $url_path ?>/blocks/1525/js/swiper.min.js"></script>
-  <script src="<?php echo $url_path ?>/blocks/1550/js/swiper.min.js"></script>
+  <!-- <script src="<?php echo $url_path ?>/blocks/1550/js/swiper.min.js"></script> -->
   <!-- File js  -->
-  <script src="<?php echo $url_path ?>/blocks/1550/js/1550.js" type="text/javascript"></script>
+  <!-- <script src="<?php echo $url_path ?>/blocks/1550/js/1550.js" type="text/javascript"></script> -->
   <script src="<?php echo $url_path ?>/blocks/1529/js/1529.js" type="text/javascript"></script>
 </head>
 

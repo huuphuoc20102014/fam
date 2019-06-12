@@ -91,8 +91,7 @@ if(isset($_POST['upload'])) {
 	<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
 		<ul>
 			<li><a href="admin-home.php"><i class="icon icon-home"></i> <span>Dashboard Home</span></a> </li>
-			<li> <a href="protype.html"><i class="icon icon-th-list"></i> <span>Product Type</span></a></li>
-			<li> <a href="manufactures.html"><i class="icon icon-th-list"></i> <span>Manufactures</span></a></li>
+			<li> <a href="admin-add-home.php"><i class="icon icon-th-list"></i> <span>Page Add</span></a></li>
 
 
 
@@ -103,8 +102,8 @@ if(isset($_POST['upload'])) {
 	<div id="content">
 
 		<div id="content-header">
-			<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Add blog</a></div>
-			<h1>Add New Blog</h1>
+			<div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Add Home</a></div>
+			<h1>Add New Home</h1>
 		</div>
 		<div class="container-fluid">
 			<hr>
