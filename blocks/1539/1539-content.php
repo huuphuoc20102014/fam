@@ -12,18 +12,13 @@ include './products.php';
 $obj_products = new products();
 $total = $obj_products->getAll();
 //phân trang
-if (empty($_GET['p'])) {
+if (empty($_GET['page'])) {
     $product = $total;
 } else {
-    $product = $obj_products->getPage($_GET['p']);
+    $product = $obj_products->getPage($_GET['page']);
 }
 $dem = 1;
-//Tìm kiếm
-$keyword = '';
-if (isset($_GET['keyword'])) {
-    $keyword = $_GET['keyword'];
-}
-$product = $obj_products->getProducts($keyword);
+
 //Hàm Delete
 $id = '';
 if (isset($_GET['id'])) {
@@ -49,7 +44,10 @@ if (isset($_GET['id'])) {
                 </form>
             </div>
             <div class="row">
-                <?php foreach ($product as $products): ?>
+                <?php
+                foreach ($product as $products):
+                    $dem++;
+                    ?>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="item">
                             <div class="thumb">
@@ -76,7 +74,7 @@ if (isset($_GET['id'])) {
                                 <i class="fa fa-star" style="color:#FF6F24"></i>
                             </div>
                             <h6 class="entry-title">
-                                 <a href="#"><?php echo $products['product_name']; ?></a>
+                                <a href="#"><?php echo $products['product_name']; ?></a>
                             </h6>
                             <div class="price">
                                 <span>
@@ -86,8 +84,42 @@ if (isset($_GET['id'])) {
                             </div>
                         </div>
                     </div>
-                
-                        <?php endforeach; ?>
+                    <?php
+                    if ($dem == 13) {
+                        break;
+                    }
+                    ?>
+                <?php endforeach; ?>
+            </div>
+            <div class="phan_trang">
+                <?php $n = ceil(count($total) / 12) ?>
+                <?php
+                $current_page = $_GET['page'] ;
+                if ($current_page> 1) {
+                    echo '<a href="shop.php?page=' . ($current_page - 1) . '">Prev</a> ';
+                }
+                ?>
+                <?php for ($i = 1; $i <= $n; $i++): ?>
+
+                <a class="perpage" href="shop.php?page=<?php echo $i ?>"
+                   style=" 
+                       <?php
+                        if ($i == $current_page)
+                        {
+                          echo 'background: #FFCB33; color: #fff;';  
+                        }
+                        ?>">
+                       <?php echo $i;?>
+                       
+                    </a>
+
+
+                <?php endfor; 
+                 if ($current_page < $n) {
+                    echo '<a href="shop.php?page=' . ($current_page + 1) . '">Next</a> ';
+                 }
+                ?>
+
             </div>
         </div>
     </div>
