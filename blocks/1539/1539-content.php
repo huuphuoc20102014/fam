@@ -115,7 +115,9 @@ if (isset($_GET['id'])) {
 
 
                 <?php endfor; 
-                 echo '<a href="shop.php?page=' . ($current_page + 1) . '">Next</a> ';
+                 if ($current_page < $n) {
+                    echo '<a href="shop.php?page=' . ($current_page + 1) . '">Next</a> ';
+                 }
                 ?>
 
             </div>
