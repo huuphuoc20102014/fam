@@ -2,17 +2,30 @@
     @color:#FF6F24;
     margin:0;
     .content-type-1539{
+
         background-color:#fff;
         border-top: 1px dotted #dad7cc;
         border-bottom: 1px dotted #dad7cc;
         padding-top: 40px;
         padding: 50px 15px 30px;
         width: 100%;
+        .phan_trang{
+            color: #483601;
+            padding: 20px 0;
+            font-weight: 400;
+            a{
+                margin: 0 5px;
+                list-style: none;
+                float: left;
+                padding: 5px 15px;
+                background: #fffae6;
+            }
+        }
         .thumb {
             position: relative;
             width: 100%;
         }
-        
+
         .overlay {
             position: absolute;
             bottom: 100%;
@@ -24,12 +37,12 @@
             height: 0;
             transition: .5s ease;
         }
-          
+
         .thumb:hover .overlay {
             bottom: 0;
             height: 100%;
         }
-          
+
         .text1 {
             margin-left: -35px;
             color: white;
@@ -40,9 +53,9 @@
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-           
-          }
-          .text2 {
+
+        }
+        .text2 {
             margin-left: 35px;
             color: white;
             font-size: 8px;
@@ -52,9 +65,9 @@
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-           
-          }
-        
+
+        }
+
         .item {
             border-bottom: 1px dotted #dad7cc;
             padding-bottom:15px;
@@ -71,7 +84,7 @@
                     }
                     .text2{
                         img{
-                           width:100%;
+                            width:100%;
                             display:block;
                         }
                     }
@@ -84,7 +97,7 @@
             margin: 0 0 40px;
             padding: 5px;
             overflow: hidden;
-             position: relative; 
+            position: relative; 
             font: 13px 'Headland One', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
             .count{
                 float: left;
@@ -124,9 +137,9 @@
             font-size: 16px;
         }
         a:hover{
-            
+
             color:@color;
-            
+
         }
         a{
             text-decoration: none;
@@ -134,10 +147,10 @@
             font-size: 15px;
         }
         h6.entry-title {
-            
+
             text-transform: uppercase;
             text-align: center;
-            
+
         }
         .star-rating {
             margin-top: 20px;
@@ -167,5 +180,5 @@
             }
         }
     }
-    
+
 }
