@@ -30,7 +30,8 @@ $less->compileFile('blocks/1529/less/1529.less', 'blocks/1529/css/1529.css');
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Agriculture</title>
+  <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+  <title>Shopraudalat.com</title>
   <!-- Library css  -->
   <link href="<?php echo $url_path ?>/blocks/1525/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo $url_path ?>/blocks/1525/css/swiper.min.css" rel="stylesheet" type="text/css"/>

@@ -10,7 +10,7 @@ $url_path = str_replace('\\', '/', $url_path);
 <div class="type-1525">
     <div class="container">
         <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="<?php echo $url_path ?>/images/logo.png" alt="img-logo" class="img-fluid"></a>
+            <a class="navbar-brand" href="index.php"><img src="<?php echo $url_path ?>/images/logo.png" alt="img-logo" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL" 
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ $url_path = str_replace('\\', '/', $url_path);
             <div class="collapse navbar-collapse" id="navbarSupportedContentXL">
                 <ul class="navbar-nav mr-auto">
                     <li class="active">
-                        <a class="nav-link before-home" href="home.php">
+                        <a class="nav-link before-home" href="index.php">
                             Home
                             <!-- <span class="sr-only">(current)</span> -->
                         </a>

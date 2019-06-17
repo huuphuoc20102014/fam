@@ -19,7 +19,7 @@ if(isset($_POST['upload'])) {
 	//function for saving the uploaded images in a specific folder
 	move_uploaded_file($filetmpname, $folder.$filename);
 	//inserting image details (ie image name) in the database
-	$sql = "INSERT INTO `fam` (`product_images`, `product_name`, `product_price`, `mota`)  VALUES ('$filename', '$product_name', '$product_price', 'mota')";
+	$sql = "INSERT INTO `fam` (`product_images`, `product_name`, `product_price`, `mota`)  VALUES ('$filename', '$product_name', '$product_price', '$mota')";
 	$qry = mysqli_query($conn,  $sql);
 	if( $qry) {
 		echo "image uploaded";
@@ -142,13 +142,13 @@ if(isset($_POST['upload'])) {
 									<div class="control-group">
 										<label class="control-label">Giá bán :</label>
 										<div class="controls">
-											<input type="text" class="span11" placeholder="price" name = "product_price" /> *
+											<input type="text" class="span11" placeholder="price..." name = "product_price" /> *
 										</div>
 									</div>
 									<div class="control-group">
 										<label class="control-label">Mô tả :</label>
 										<div class="controls">
-											<input type="text" class="span11" placeholder="price" name = "mota" /> *
+											<input type="text" class="span11" placeholder="Mô tả..." name = "mota" /> *
 										</div>
 									</div>
 									<div class="form-actions">

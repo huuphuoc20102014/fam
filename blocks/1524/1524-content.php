@@ -32,12 +32,12 @@ $url_path = str_replace('\\', '/', $url_path);
                         <i class="fa fa-star" style="color:#FF6F24"></i>
                     </div>
                     <h6 class="entry-title">
-                        <a href="#">Blueberries</a>
+                        <a href="#">cà chua</a>
                     </h6>
-                    <div class="price">
+                    <!-- <div class="price">
                         <del><span><span>$</span>16.00</span></del><span>
                             <span>$</span>13.45</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 col-hover">
@@ -53,18 +53,18 @@ $url_path = str_replace('\\', '/', $url_path);
                         </div>
                     </div>
                     <div class="star-rating">
-                        <i class="fa fa-star" style="color:#B0B0AF"></i>
-                        <i class="fa fa-star" style="color:#B0B0AF"></i>
-                        <i class="fa fa-star" style="color:#B0B0AF"></i>
-                        <i class="fa fa-star" style="color:#B0B0AF"></i>
-                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
                     </div>
                     <h6 class="entry-title">
-                        <a href="#">Broccoli</a>
+                        <a href="#">salad</a>
                     </h6>
-                    <div class="price">
+                    <!-- <div class="price">
                         <span>$</span>8.50</span>
-                    </div>
+                    </div> -->
                     <a href="../../../block/b111_6_phuoc/1524/less/1524.less"></a>
                 </div>
             </div>
@@ -85,14 +85,14 @@ $url_path = str_replace('\\', '/', $url_path);
                         <i class="fa fa-star" style="color:#FF6F24"></i>
                         <i class="fa fa-star" style="color:#FF6F24"></i>
                         <i class="fa fa-star" style="color:#FF6F24"></i>
-                        <i class="fa fa-star" style="color:#B0B0AF"></i>
+                        <i class="fa fa-star" style="color:#FF6F24"></i>
                     </div>
                     <h6 class="entry-title">
-                        <a href="#">Carrots</a>
+                        <a href="#">dâu</a>
                     </h6>
-                    <div class="price">
+                    <!-- <div class="price">
                         <span>$</span>10.55</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class=" col-md-3 col-sm-6 col-xs-12 col-hover">
@@ -114,13 +114,13 @@ $url_path = str_replace('\\', '/', $url_path);
                         <i class="fa fa-star" style="color:#FF6F24"></i>
                     </div>
                     <h6 class="entry-title">
-                        <a href="#">Cherry Tomatoes</a>
+                        <a href="#">cam</a>
                     </h6>
-                    <div class="price">
+                    <!-- <div class="price">
                         <span>$</span>5.00</span>
                         <span>-</span>
                         <span>$</span>16.00</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

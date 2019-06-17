@@ -226,7 +226,14 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1199px) {
+  .type-1529 .one_third {
+    text-align: center;
+    width: 100%;
+  }
   .type-1529 .one_third iframe {
     width: 100%;
+  }
+  .type-1529 .one_third .fb-page span {
+    width: 258px !important;
   }
 }

@@ -17,9 +17,9 @@ $url_path = str_replace('\\', '/', $url_path);
 		</div>
 
 		<div class="cmsms_breadcrumbs_1534">
-			<a href="#" class="cms_home_1534">Home</a>
+			<a href="index.php" class="cms_home_1534">Home</a>
 			<span class="bread-crumbs_sep"> / </span>
-			<span>About</span>
+			<span>Detail</span>
 		</div>
 	</div>
 </div>
